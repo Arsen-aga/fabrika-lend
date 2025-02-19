@@ -11,15 +11,18 @@
 @import 'base/titles';
 
 
+@import './components/icons-font.scss';
+@import './components/bg-swiper.scss';
 @import './components/accordion.scss';
 
 
 @import 'blocks/header';
-@import 'blocks/quiz';
-@import 'blocks/modals';
+@import 'blocks/front-block';
+@import 'blocks/service-standard';
 
 
 @import 'blocks/footer';
+@import 'blocks/modals';
 
 
 

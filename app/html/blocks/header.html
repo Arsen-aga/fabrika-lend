@@ -13,45 +13,134 @@
 <body>
   <div class="body_wrapper main-page" id="home">
     <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <a class="header__logo logo" href="/">
-            <img class="header__logo-img" src="images/logo.webp" alt="">
-          </a>
-          <div class="header__item header__work">
-            <!-- @@include('../../images/icons/time.svg') -->
-            <div class="header__item-rigth">
-              <p class="header__item-text">
-                Работаем без выходных <br>
-                с 8:00 до 20:00
+    
+      <div class="header-top">
+        <div class="container header-top__container">
+          <div class="header-top__leftside">
+            <a href="/" class="header-top__logo">
+              <div class="header-top__logo-pic">
+                <img src="images/icons/logo.svg" alt="">
+              </div>
+              <p class="header-top__logo-description">
+                Российское <br>
+                производство <br>
+                полного цикла
               </p>
+            </a>
+            <div class="header-top__select _icon-geo">
+              <div class="header-top__select-inner">
+    
+    
+                <div class="header-top__city-choose">
+                  Выберите ваш город:
+                </div>
+                <div class="header-top__city-choosen _icon-arrow">
+                  Москва
+                </div>
+                <ul class="header-top__cities">
+                  <li class="header-top__city">
+                    <input type="radio" id="city1" name="city[]" value="msk">
+                    <label for="city1">Москва</label>
+                  </li>
+                  <li class="header-top__city">
+                    <input type="radio" id="city2" name="city[]" value="spb">
+                    <label for="city2">Ленинградская область</label>
+                  </li>
+                  <li class="header-top__city">
+                    <input type="radio" id="city3" name="city[]" value="anapa">
+                    <label for="city3">Краснодарский край</label>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="header__item header__mail">
-            <!-- @@include('../../images/icons/mail.svg') -->
-            <div class="header__item-rigth">
-              <a href="mailto:info@tochkabureniya.ru" class="header__item-link _link">
-                info@tochkabureniya.ru
-              </a>
-              <p class="header__item-text">
-                Напишите нам на почту
-              </p>
+          <div class="header-top__rightside">
+            <div class="header-top__messengers messengers">
+              <a href="https://wa.me/79190339577"
+                class="messengers__messenger messengers__messenger_whatsapp _icon-whatsapp _icon-white"></a>
+              <a href="#" class="messengers__messenger messengers__messenger_telegram _icon-telegram _icon-white"></a>
+            </div>
+            <div class="header-top__mail _icon-mail">
+              <div class="header-top__mail-inner">
+                <a href="mailto:info@fabrika-shatrov.ru" class="header-top__mail-link ">info@fabrika-shatrov.ru</a>
+                <p class="header-top__mail-text">
+                  Напишите нам на почту
+                </p>
+              </div>
+            </div>
+            <div class="header-top__phone  _icon-phone">
+              <div class="header-top__phone-inner">
+                <a href="tel:+78002229233" class="header-top__phone-link">8 800 222 92 33</a>
+                <a href="#callback" data-fancybox class="header-top__callback _orange-text _link">Перезвоните мне</a>
+              </div>
             </div>
           </div>
-          <div class="header__item header__phone">
-            <!-- @@include('../../images/icons/tel.svg') -->
-            <div class="header__item-rigth">
-              <a class="header__item-number" href="tel:+74996382232">
-                8 499 638-22-32
-              </a>
-              <p class="header__item-point">
-                Сейчас работаем
-              </p>
-              <a href="#callback" data-fancybox="" class="header__item-link _link">
-                Перезвоните нам
-              </a>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container header-bottom__container">
+          <nav class="header-bottom__navigation main-nav">
+            <button type="button" class="main-nav__close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17">
+                <path fill="rgb(252, 76, 2)"
+                  d="M2.622 16.332L.666 14.376 6.543 8.5.666 2.622 2.622.666 8.5 6.543 14.376.666l1.956 1.956L10.455 8.5l5.876 5.876-1.956 1.956-5.876-5.876z">
+                </path>
+              </svg>
+            </button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item_parent">
+                <a href="#" class="main-nav__link">Главная</a>
+              </li>
+              <li class="main-nav__item main-nav__item_parent">
+                <a href="#" class="main-nav__link ">О нас</a>
+              </li>
+              <li class="main-nav__item main-nav__item_parent">
+                <a href="#" class="main-nav__link">Услуги</a>
+              </li>
+              <li class="main-nav__item main-nav__item_parent">
+                <a href="#" class="main-nav__link">Галерея</a>
+              </li>
+              <li class="main-nav__item main-nav__item_parent">
+                <a href="#" class="main-nav__link ">Рекомендации</a>
+              </li>
+              <li class="main-nav__item main-nav__item_parent">
+                <a href="#" class="main-nav__link ">FAQ</a>
+              </li>    
+            </ul>
+            <div class="header-top__messengers messengers _mobile">
+              <a href="https://wa.me/79190339577"
+                class="messengers__messenger messengers__messenger_whatsapp _icon-whatsapp _icon-white"></a>
+              <a href="#" class="messengers__messenger messengers__messenger_telegram _icon-telegram _icon-white"></a>
             </div>
-          </div>
+            <div class="header-top__mail _icon-mail _mobile">
+              <div class="header-top__mail-inner">
+                <a href="mailto:info@fabrika-shatrov.ru" class="header-top__mail-link _link">info@fabrika-shatrov.ru</a>
+                <p class="header-top__mail-text">
+                  Напишите нам на почту
+                </p>
+              </div>
+            </div>
+          </nav>
+          <button class="main-nav__toggler" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+              x="0px" y="0px" viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;"
+              xml:space="preserve">
+              <g>
+                <g id="Menu_1_">
+                  <path fill="rgb(252, 76, 2)"
+                    d="M12.03,120.303h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03    c-6.641,0-12.03,5.39-12.03,12.03C0,114.913,5.39,120.303,12.03,120.303z">
+                  </path>
+                  <path fill="rgb(252, 76, 2)"
+                    d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03    S379.58,180.455,372.939,180.455z">
+                  </path>
+                  <path fill="rgb(252, 76, 2)"
+                    d="M372.939,264.667H132.333c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h240.606    c6.641,0,12.03-5.39,12.03-12.03C384.97,270.056,379.58,264.667,372.939,264.667z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+          </button>
+          <a data-fancybox href="#" class="header-bottom__btn">Оставить заявку</a>
         </div>
       </div>
     </header>

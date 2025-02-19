@@ -6,7 +6,7 @@
   --container-padding: 15px;
 
   // шрифты
-  --font-default: 'Inter';
+  --font-default: 'NTSomic';
   --font-titles: var(--font-default);
 
   // размер шрифта
@@ -14,21 +14,24 @@
   --defaul-line-height: calc(135%);
 
   // брекпоинты
-  --xl: 1230px;
-  --lg: 991.8px;
-  --md: 767.98px;
-  --sm: 575.98px;
-  --xs: 468px;
+  --xl: 1230px; // pc
+  --lg: 991.98px; // tablet
+  --md: 767.98px; // mobile
+  --sm: 575.98px; // mobileMiddle
+  --xs: 479.98px; // mobileSmall
+  --xxs: 374.98px; // mobileMini
 
   // глобаьлные цвета
-  --page-bg: #FFFFFF;
-  --default-color: #272727;
-  --link-color: #021E2F;
+  --page-bg: #F8F8F8;
+  --default-color: #282828;
+  --link-color: #282828;
 
 
   // ЗДЕСЬ МОЖНО ПРОПИСЫВАТЬ СВОИ ПЕРЕМЕННЫЕ
-  --primary: #EB6C2D;
-  --primary-hover: #fd691f;
+  --primary: #FC4C02;
+  --primary-hover: #ff6423;
+
+  
   --accent: #232C35;
   --border: #f1f1f1;
   --section-bg: #f1f1f1;

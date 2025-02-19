@@ -1,0 +1,155 @@
+[class^="_icon-"]::before,
+[class*=" _icon-"]::before {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "icons" !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+._icon-diamond:before {
+	content: "\e9e9";
+}
+._icon-galka:before {
+	content: "\e9ea";
+}
+._icon-info:before {
+	content: "\e9eb";
+}
+._icon-rubles:before .path1 {
+	content: "\e9ec";
+
+	opacity: 0.32;
+}
+._icon-rubles:before .path2 {
+	content: "\e9ed";
+	margin-left: -1.9619140625em;
+
+	opacity: 0.56;
+}
+._icon-rubles:before .path3 {
+	content: "\e9ee";
+	margin-left: -1.9619140625em;
+	opacity: 0.8;
+}
+._icon-shater:before {
+	content: "\e9ef";
+}
+._icon-temp:before {
+	content: "\e9f0";
+}
+._icon-orange::before {
+	color: #fc4c02;
+}
+._icon-white::before {
+	color: #fff;
+}
+._icon-black::before {
+	color: rgb(29, 27, 25);
+}
+._icon-download:before {
+	content: "\e9f1";
+}
+._icon-arrow:before {
+	content: "\e900";
+}
+._icon-arrows:before {
+	content: "\e902";
+}
+._icon-big_arrow:before {
+	content: "\e903";
+}
+._icon-big_figure:before {
+	content: "\e904";
+}
+._icon-broke:before {
+	content: "\e905";
+}
+._icon-checkbox:before {
+	content: "\e906";
+}
+._icon-color:before {
+	content: "\e907";
+}
+._icon-complaint:before {
+	content: "\e908";
+}
+._icon-complexity:before {
+	content: "\e909";
+}
+._icon-date:before {
+	content: "\e90a";
+}
+._icon-dept:before {
+	content: "\e90b";
+}
+._icon-equipment:before {
+	content: "\e9d4";
+}
+._icon-geo:before {
+	content: "\e9d5";
+}
+._icon-home:before {
+	content: "\e9d6";
+}
+._icon-key:before {
+	content: "\e9d7";
+}
+._icon-letters:before {
+	content: "\e9d8";
+}
+._icon-mail:before {
+	content: "\e9d9";
+}
+._icon-money:before {
+	content: "\e9da";
+}
+._icon-more:before {
+	content: "\e9db";
+}
+._icon-organisation:before {
+	content: "\e9dc";
+}
+._icon-phone:before {
+	content: "\e9dd";
+}
+._icon-play:before {
+	content: "\e9de";
+}
+._icon-pollution:before {
+	content: "\e9df";
+}
+._icon-production:before {
+	content: "\e9e0";
+}
+._icon-quality:before {
+	content: "\e9e1";
+}
+._icon-snow:before {
+	content: "\e9e2";
+}
+._icon-snow2:before {
+	content: "\e9e3";
+}
+._icon-telegram:before {
+	content: "\e9e4";
+}
+._icon-tfa:before {
+	content: "\e9e5";
+}
+._icon-tz:before {
+	content: "\e9e6";
+}
+._icon-whatsapp:before {
+	content: "\e9e7";
+}
+._icon-wind:before {
+	content: "\e9e8";
+}

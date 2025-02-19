@@ -13,747 +13,402 @@
 <body>
   <div class="body_wrapper main-page" id="home">
     <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <a class="header__logo logo" href="/">
-            <img class="header__logo-img" src="images/logo.webp" alt="">
-          </a>
-          <div class="header__item header__work">
-            
-            <div class="header__item-rigth">
-              <p class="header__item-text">
-                Работаем без выходных <br>
-                с 8:00 до 20:00
+    
+      <div class="header-top">
+        <div class="container header-top__container">
+          <div class="header-top__leftside">
+            <a href="/" class="header-top__logo">
+              <div class="header-top__logo-pic">
+                <img src="images/icons/logo.svg" alt="">
+              </div>
+              <p class="header-top__logo-description">
+                Российское <br>
+                производство <br>
+                полного цикла
               </p>
+            </a>
+            <div class="header-top__select _icon-geo">
+              <div class="header-top__select-inner">
+    
+    
+                <div class="header-top__city-choose">
+                  Выберите ваш город:
+                </div>
+                <div class="header-top__city-choosen _icon-arrow">
+                  Москва
+                </div>
+                <ul class="header-top__cities">
+                  <li class="header-top__city">
+                    <input type="radio" id="city1" name="city[]" value="msk">
+                    <label for="city1">Москва</label>
+                  </li>
+                  <li class="header-top__city">
+                    <input type="radio" id="city2" name="city[]" value="spb">
+                    <label for="city2">Ленинградская область</label>
+                  </li>
+                  <li class="header-top__city">
+                    <input type="radio" id="city3" name="city[]" value="anapa">
+                    <label for="city3">Краснодарский край</label>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="header__item header__mail">
-            
-            <div class="header__item-rigth">
-              <a href="mailto:info@tochkabureniya.ru" class="header__item-link _link">
-                info@tochkabureniya.ru
-              </a>
-              <p class="header__item-text">
-                Напишите нам на почту
-              </p>
+          <div class="header-top__rightside">
+            <div class="header-top__messengers messengers">
+              <a href="https://wa.me/79190339577"
+                class="messengers__messenger messengers__messenger_whatsapp _icon-whatsapp _icon-white"></a>
+              <a href="#" class="messengers__messenger messengers__messenger_telegram _icon-telegram _icon-white"></a>
             </div>
-          </div>
-          <div class="header__item header__phone">
-            
-            <div class="header__item-rigth">
-              <a class="header__item-number" href="tel:+74996382232">
-                8 499 638-22-32
-              </a>
-              <p class="header__item-point">
-                Сейчас работаем
-              </p>
-              <a href="#callback" data-fancybox="" class="header__item-link _link">
-                Перезвоните нам
-              </a>
+            <div class="header-top__mail _icon-mail">
+              <div class="header-top__mail-inner">
+                <a href="mailto:info@fabrika-shatrov.ru" class="header-top__mail-link ">info@fabrika-shatrov.ru</a>
+                <p class="header-top__mail-text">
+                  Напишите нам на почту
+                </p>
+              </div>
+            </div>
+            <div class="header-top__phone  _icon-phone">
+              <div class="header-top__phone-inner">
+                <a href="tel:+78002229233" class="header-top__phone-link">8 800 222 92 33</a>
+                <a href="#callback" data-fancybox class="header-top__callback _orange-text _link">Перезвоните мне</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="header-bottom">
+        <div class="container header-bottom__container">
+          <nav class="header-bottom__navigation main-nav">
+            <button type="button" class="main-nav__close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17">
+                <path fill="rgb(252, 76, 2)"
+                  d="M2.622 16.332L.666 14.376 6.543 8.5.666 2.622 2.622.666 8.5 6.543 14.376.666l1.956 1.956L10.455 8.5l5.876 5.876-1.956 1.956-5.876-5.876z">
+                </path>
+              </svg>
+            </button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item_parent">
+                <a href="#" class="main-nav__link">Главная</a>
+              </li>
+              <li class="main-nav__item main-nav__item_parent">
+                <a href="#" class="main-nav__link ">О нас</a>
+              </li>
+              <li class="main-nav__item main-nav__item_parent">
+                <a href="#" class="main-nav__link">Услуги</a>
+              </li>
+              <li class="main-nav__item main-nav__item_parent">
+                <a href="#" class="main-nav__link">Галерея</a>
+              </li>
+              <li class="main-nav__item main-nav__item_parent">
+                <a href="#" class="main-nav__link ">Рекомендации</a>
+              </li>
+              <li class="main-nav__item main-nav__item_parent">
+                <a href="#" class="main-nav__link ">FAQ</a>
+              </li>    
+            </ul>
+            <div class="header-top__messengers messengers _mobile">
+              <a href="https://wa.me/79190339577"
+                class="messengers__messenger messengers__messenger_whatsapp _icon-whatsapp _icon-white"></a>
+              <a href="#" class="messengers__messenger messengers__messenger_telegram _icon-telegram _icon-white"></a>
+            </div>
+            <div class="header-top__mail _icon-mail _mobile">
+              <div class="header-top__mail-inner">
+                <a href="mailto:info@fabrika-shatrov.ru" class="header-top__mail-link _link">info@fabrika-shatrov.ru</a>
+                <p class="header-top__mail-text">
+                  Напишите нам на почту
+                </p>
+              </div>
+            </div>
+          </nav>
+          <button class="main-nav__toggler" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+              x="0px" y="0px" viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;"
+              xml:space="preserve">
+              <g>
+                <g id="Menu_1_">
+                  <path fill="rgb(252, 76, 2)"
+                    d="M12.03,120.303h360.909c6.641,0,12.03-5.39,12.03-12.03c0-6.641-5.39-12.03-12.03-12.03H12.03    c-6.641,0-12.03,5.39-12.03,12.03C0,114.913,5.39,120.303,12.03,120.303z">
+                  </path>
+                  <path fill="rgb(252, 76, 2)"
+                    d="M372.939,180.455H12.03c-6.641,0-12.03,5.39-12.03,12.03s5.39,12.03,12.03,12.03h360.909c6.641,0,12.03-5.39,12.03-12.03    S379.58,180.455,372.939,180.455z">
+                  </path>
+                  <path fill="rgb(252, 76, 2)"
+                    d="M372.939,264.667H132.333c-6.641,0-12.03,5.39-12.03,12.03c0,6.641,5.39,12.03,12.03,12.03h240.606    c6.641,0,12.03-5.39,12.03-12.03C384.97,270.056,379.58,264.667,372.939,264.667z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+          </button>
+          <a data-fancybox href="#" class="header-bottom__btn">Оставить заявку</a>
+        </div>
+      </div>
     </header>
 <main class="main">
-  <section class="quiz-block">
-  <div class="container">
-    <h2 class="quiz-block__title _title">
-      Сконфигурируйте лестницу <br><span>под свой интерьер</span>
-    </h2>
+  <section class="front-block">
+  <div class="front-block__bg-swiper bg-swiper swiper">
+    <div class="swiper-wrapper">
+      <div class="bg-swiper__slide swiper-slide">
+        <div class="bg-swiper__slide-wrapper">
+          <img class="bg-swiper__slide-img _img" src="images/front-block-1.webp" alt="front-block-bg-1">
+        </div>
+      </div>
+      <div class="bg-swiper__slide swiper-slide">
+        <div class="bg-swiper__slide-wrapper">
+          <img class="bg-swiper__slide-img _img" src="images/front-block-2.webp" alt="front-block-bg-2">
+        </div>
+      </div>
+      <div class="bg-swiper__slide swiper-slide">
+        <div class="bg-swiper__slide-wrapper">
+          <img class="bg-swiper__slide-img _img" src="images/front-block-1.webp" alt="front-block-bg-3">
+        </div>
+      </div>
+      <div class="bg-swiper__slide swiper-slide">
+        <div class="bg-swiper__slide-wrapper">
+          <img class="bg-swiper__slide-img _img" src="images/front-block-2.webp" alt="front-block-bg-4">
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="quiz-block__inner">
-    <div class="container">
-      <form class="quiz quiz-block__form form-submit" action="#" method="POST" enctype="multipart/form-data" novalidate>
-        <input type="hidden" name="from" value="Получить результаты из выбранной отрасли">
-        <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
-        <div class="progress-text">
-          <div class="progress-text__inner">
-            <span class="progress-text__first-word">Осталось</span> <span class="current-step">7</span>
-            <span class="rp-rule__span">вопросов</span> из 7
-          </div>
-        </div>
-        <div class="progress-bar">
-          <div class="quiz-progress__line progress-line">
-            <div class="quiz-progress__line-step line" style="left: -80.5%;" data-left="80.5">
-            </div>
-          </div>
-        </div>
-
-        <div class="step step1 active">
-          <h2 class="quiz-step__title">
-            Вас интересует лестница в помещение или на улицу?
-          </h2>
-          <div class="step__inner">
-            <div class="step__body">
-              <div class="quiz-list">
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-1" class="radio-input" value="На улицу" required="">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img _img" src="images/quiz-1.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      На улицу
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-1" class="radio-input" value="В помещение" required="">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img _img" src="images/quiz-2.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      В помещение
-                    </h6>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="quiz-footer">
-            <div class="quiz-footer__btns">
-              <button type="button" class="quiz-btn prev-step _main-btn" disabled>
-                <span>Предыдущий щаг</span>
-              </button>
-              <button type="button" class="quiz-btn next-step _main-btn">
-                <span>Следующий шаг</span>
-              </button>
-            </div>
-            <p class="quiz-needs-select">Пожалуйста, выберите вариант ответа</p>
-          </div>
-        </div>
-        <div class="step step2 ">
-          <h2 class="quiz-step__title">
-            Вас интересует лестница в помещение или на улицу?
-          </h2>
-          <div class="step__inner">
-            <div class="step__body">
-              <div class="quiz-list">
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-2" class="radio-input" value="Металлокаркас крыльца" required="">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-3.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Металлокаркас крыльца
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-2" class="radio-input" value="Береговые лестницы" required="">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-3.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Береговые лестницы
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-2" class="radio-input" value="Лестницы в подвал" required="">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-3.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Лестницы в подвал
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-2" class="radio-input" value="Спуски к воде и причалы" required="">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-3.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Спуски к воде и причалы
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-2" class="radio-input" value=" Эвакуационные и пожарные лестницы"
-                      required="">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-3.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Эвакуационные и пожарные лестницы
-                    </h6>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="quiz-footer">
-            <div class="quiz-footer__btns">
-              <button type="button" class="quiz-btn prev-step _main-btn">
-                <span>Предыдущий шаг</span><img src="" alt="">
-              </button>
-              <button type="button" class="quiz-btn next-step _main-btn">
-                <span>Следующий шаг</span><img src="" alt="">
-              </button>
-            </div>
-            <p class="quiz-needs-select">Пожалуйста, выберите вариант ответа</p>
-          </div>
-        </div>
-        <div class="step step3 ">
-          <h2 class="quiz-step__title">
-            Выберите конфигурацию лестницы
-          </h2>
-          <div class="step__inner">
-            <div class="step__body">
-              <div class="quiz-list">
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-3" class="radio-input" value="Поворот на 90 градусов">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-4.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Поворот на 90 градусов
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-3" class="radio-input" value="Прямая">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-4.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Прямая
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-3" class="radio-input" value="Поворот на 180 градусов">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-4.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Поворот <br>на 180 градусов
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-3" class="radio-input" value="Другая">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-4.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Другая
-                    </h6>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="quiz-footer">
-            <div class="quiz-footer__btns">
-              <button type="button" class="quiz-btn prev-step _main-btn">
-                <span>Предыдущий шаг</span><img src="" alt="">
-              </button>
-              <button type="button" class="quiz-btn next-step _main-btn">
-                <span>На следующий шаг</span><img src="" alt="">
-              </button>
-            </div>
-            <p class="quiz-needs-select">Пожалуйста, выберите вариант ответа</p>
-          </div>
-        </div>
-        <div class="step step4 ">
-          <h2 class="quiz-step__title">
-            Какова высота от пола первого этажа до
-            пола второго этажа?
-          </h2>
-          <div class="step__inner">
-            <div class="step__body">
-              <div class="quiz-list">
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-4" class="radio-input" value="1 м">
-                    <span></span>
-                    <h6 class="quiz-list__item-title">
-                      1 м
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-4" class="radio-input" value="2 м">
-                    <span></span>
-                    <h6 class="quiz-list__item-title">
-                      2 м
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-4" class="radio-input" value="3 м">
-                    <span></span>
-                    <h6 class="quiz-list__item-title">
-                      3 м
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-4" class="radio-input" value="4 м">
-                    <span></span>
-                    <h6 class="quiz-list__item-title">
-                      4 м
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-4" class="radio-input" value="5 м">
-                    <span></span>
-                    <h6 class="quiz-list__item-title">
-                      5 м
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-4" class="radio-input" value="6 м">
-                    <span></span>
-                    <h6 class="quiz-list__item-title">
-                      6 м
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-4" class="radio-input" value="7 м">
-                    <span></span>
-                    <h6 class="quiz-list__item-title">
-                      7 м
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-4" class="radio-input" value="8 м">
-                    <span></span>
-                    <h6 class="quiz-list__item-title">
-                      8 м
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-4" class="radio-input" value="9 м">
-                    <span></span>
-                    <h6 class="quiz-list__item-title">
-                      9 м
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-4" class="radio-input" value="10 м">
-                    <span></span>
-                    <h6 class="quiz-list__item-title">
-                      10 м
-                    </h6>
-                  </label>
-                </div>
-              </div>
-              <div class="quiz-list__bottom">
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <p class="quiz-list__variant-text">
-                      Свое значение
-                    </p>
-                    <input type="text" name="quest-4" class="text-input _input" placeholder="Введите свое значение"
-                      maxlength="10">
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="quiz-footer">
-            <div class="quiz-footer__btns">
-              <button type="button" class="quiz-btn prev-step _main-btn">
-                <span>Предыдущий шаг</span><img src="" alt="">
-              </button>
-              <button type="button" class="quiz-btn next-step _main-btn">
-                <span>На следующий шаг</span><img src="" alt="">
-              </button>
-            </div>
-            <p class="quiz-needs-select">Пожалуйста, выберите вариант ответа</p>
-          </div>
-        </div>
-        <div class="step step5 ">
-          <h2 class="quiz-step__title">
-            Нужна ли Вам отделка: ступени (обшивка)
-          </h2>
-          <div class="step__inner">
-            <div class="step__body">
-              <div class="quiz-list">
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-5" class="radio-input" value="Сосна">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-5.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Сосна
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-5" class="radio-input" value="Лиственница">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-5.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Лиственница
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-5" class="radio-input" value="Бук">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-5.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Бук
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-5" class="radio-input" value="Дуб">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-5.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Дуб
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-5" class="radio-input" value="Ясень">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-5.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Ясень
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-5" class="radio-input" value="Террасная доска">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-5.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Террасная доска
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-5" class="radio-input" value="ПВЛ лист">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-5.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      ПВЛ лист
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-5" class="radio-input" value="Чечевица">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-5.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Чечевица
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-5" class="radio-input" value="Не нужна">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-5.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Не нужна
-                    </h6>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="quiz-footer">
-            <div class="quiz-footer__btns">
-              <button type="button" class="quiz-btn prev-step _main-btn">
-                <span>Предыдущий шаг</span><img src="" alt="">
-              </button>
-              <button type="button" class="quiz-btn next-step _main-btn">
-                <span>На следующий шаг</span><img src="" alt="">
-              </button>
-            </div>
-            <p class="quiz-needs-select">Пожалуйста, выберите вариант ответа</p>
-          </div>
-        </div>
-        <div class="step step6 ">
-          <h2 class="quiz-step__title">
-            Нужны ли Вам перила?
-          </h2>
-          <div class="step__inner">
-            <div class="step__body">
-              <div class="quiz-list">
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-6" class="radio-input" value="Деревянные">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-6.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Деревянные
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-6" class="radio-input" value="Металлические">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-6.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Металлические
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-6" class="radio-input" value="Кованные">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-6.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Кованные
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-6" class="radio-input" value="Стеклянные">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-6.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Стеклянные
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-6" class="radio-input" value="Из нержавеющей стали">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-6.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Из нержавеющей стали
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-6" class="radio-input" value=" Лазерной резки">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-6.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Лазерной резки
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-6" class="radio-input" value="Тросовые">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-6.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Тросовые
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-6" class="radio-input" value="С балясинами">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-6.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      С балясинами
-                    </h6>
-                  </label>
-                </div>
-                <div class="quiz-list__item variant">
-                  <label class="quiz-list__label">
-                    <input type="radio" name="quest-6" class="radio-input" value=" Не нужно">
-                    <div class="quiz-list__item-wrapper">
-                      <img class="quiz-list__img _img" src="images/quiz-6.webp" alt="">
-                    </div>
-
-                    <h6 class="quiz-list__item-title">
-                      Не нужно
-                    </h6>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="quiz-footer">
-            <div class="quiz-footer__btns">
-              <button type="button" class="quiz-btn prev-step _main-btn">
-                <span>Предыдущий шаг</span><img src="" alt="">
-              </button>
-              <button type="button" class="quiz-btn next-step _main-btn">
-                <span>На следующий шаг</span><img src="" alt="">
-              </button>
-            </div>
-            <p class="quiz-needs-select">Пожалуйста, выберите вариант ответа</p>
-          </div>
-        </div>
-        <div class="step step7 ">
-          <h2 class="quiz-step__title">
-            Где территориально нужно установить
-            лестницу?
-          </h2>
-          <div class="step__inner">
-            <div class="step__body">
-              <div class="quiz-list">
-                <div class="quiz-list__item variant">
-                  <div class="quiz-list__label">
-                    <p class="quiz-list__variant-text">
-                      Укажите ваше местоположение
-                    </p>
-                    <label>
-                      <input class="form-control _input" list="datalistOptions-2"
-                        placeholder="Введите свое значение" name="quest-7">
-                      <datalist id="datalistOptions-2">
-                        <option value="Адмиралтейский район">Адмиралтейский район</option>
-                        <option value="Василеостровский район">Василеостровский район</option>
-                        <option value="Выборгский район">Выборгский район</option>
-                        <option value="Калининский район">Калининский район</option>
-                        <option value="Кировский район">Кировский район</option>
-                        <option value="Колпинский район">Колпинский район</option>
-                        <option value="Красногвардейский район">Красногвардейский район</option>
-                        <option value="Красносельский район">Красносельский район</option>
-                        <option value="Кронштадтский район">Кронштадтский район</option>
-                        <option value="Курортный район">Курортный район</option>
-                        <option value="Московский район">Московский район</option>
-                        <option value="Невский район">Невский район</option>
-                        <option value="Петроградский район">Петроградский район</option>
-                        <option value="Петродворцовый район">Петродворцовый район</option>
-                        <option value="Приморский район">Приморский район</option>
-                        <option value="Пушкинский район">Пушкинский район</option>
-                        <option value="Фрунзенский район">Фрунзенский район</option>
-                        <option value="Центральный район">Центральный район</option>
-                        <option value="Зеленогорск">Зеленогорск</option>
-                        <option value="Колпино">Колпино</option>
-                        <option value="Кронштадт">Кронштадт</option>
-                        <option value="Ломоносов">Ломоносов</option>
-                        <option value="Павловск">Павловск</option>
-                        <option value="Петергоф">Петергоф</option>
-                        <option value="Пушкин">Пушкин</option>
-                        <option value="Сестрорецк">Сестрорецк</option>
-                        <option value="Красное Село">Красное Село</option>
-                      </datalist>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="quiz-footer">
-            <div class="quiz-footer__btns">
-              <button type="button" class="quiz-btn prev-step _main-btn">
-                <span>Предыдущий шаг</span><img src="" alt="">
-              </button>
-              <button type="button" class="quiz-btn next-step _main-btn">
-                <span>Отправить на расчет</span><img src="" alt="">
-              </button>
-            </div>
-            <p class="quiz-needs-select">Пожалуйста, выберите вариант ответа</p>
-          </div>
-        </div>
-        <div class="step step8 quiz-block__last-step last-step ">
-          <div class="form-block__bottom last-step__inner">
-            <div class="form-block__inputs">
-              <input class="form-block__inp _input" type="text" name="name" placeholder="Ваше имя" required>
-              <input class="form-block__inp _input" type="email" name="email" placeholder="Ваш E-mail">
-              <input class="form-block__inp _input" type="tel" name="phone" placeholder="Ваш телефон" required>
-              <label class="section-13__checkbox-block checkbox-block">
-                <input type="checkbox" name="access" required checked>
-                <span>
-                  <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M9.24334 2.50072L5.00034 6.74572C4.60934 7.13672 3.97634 7.13672 3.58634 6.74572L0.757344 3.91372C0.367344 3.52372 0.367344 2.89672 0.757344 2.50072C1.14834 2.10672 1.78134 2.10672 2.17234 2.50072L4.29334 4.62372L7.82834 1.08772C8.21934 0.694719 8.85234 0.694719 9.24334 1.08772C9.63334 1.48372 9.63334 2.10672 9.24334 2.50072Z" fill="#EB6C2D"/>
+  <div class="overlay"></div>
+  <div class="container front-block__container relative">
+    <div class="front-block__inner">
+      <div class="front-block__left">
+        <h1 class="front-block__title">
+          Сервис и забота <span>без границ</span>
+        </h1>
+        <p class="front-block__subtitle">
+          <strong>Шатры требуют ухода?</strong> Мы решим все вопросы – от мойки до хранения! Комплексный сервис шатров –
+          <strong>надёжность и долговечность
+            конструкций!</strong>
+        </p>
+        <ul class="front-block__list">
+          <li class="front-block__item">
+            <div class="front-block__item-icon">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 7.32575L6.74991 11.0728L15 2.82275" stroke="white" stroke-width="4.22287" stroke-linecap="round"/>
 </svg>
 
-                </span>
-                <p>
-                  Я принимаю условия <a data-fancybox="" class="_link" href="#politics">политики конфиденциальности</a>
-                </p>
-              </label>
-              <button class="form-block__btn _main-btn" type="submit">
-                Получить результат
-              </button>
+            </div>
+            <p class="front-block__item-text">
+              Монтаж
+            </p>
+          </li>
+          <li class="front-block__item">
+            <div class="front-block__item-icon">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 7.32575L6.74991 11.0728L15 2.82275" stroke="white" stroke-width="4.22287" stroke-linecap="round"/>
+</svg>
+
+            </div>
+            <p class="front-block__item-text">
+              Ремонт
+            </p>
+          </li>
+          <li class="front-block__item">
+            <div class="front-block__item-icon">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 7.32575L6.74991 11.0728L15 2.82275" stroke="white" stroke-width="4.22287" stroke-linecap="round"/>
+</svg>
+
+            </div>
+            <p class="front-block__item-text">
+              Хранение
+            </p>
+          </li>
+          <li class="front-block__item">
+            <div class="front-block__item-icon">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 7.32575L6.74991 11.0728L15 2.82275" stroke="white" stroke-width="4.22287" stroke-linecap="round"/>
+</svg>
+
+            </div>
+            <p class="front-block__item-text">
+              Мойка
+            </p>
+          </li>
+          <li class="front-block__item">
+            <div class="front-block__item-icon">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 7.32575L6.74991 11.0728L15 2.82275" stroke="white" stroke-width="4.22287" stroke-linecap="round"/>
+</svg>
+
+            </div>
+            <p class="front-block__item-text">
+              Демонтаж
+            </p>
+          </li>
+          <li class="front-block__item">
+            <div class="front-block__item-icon light-icon">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 7.32575L6.74991 11.0728L15 2.82275" stroke="white" stroke-width="4.22287" stroke-linecap="round"/>
+</svg>
+
+            </div>
+            <p class="front-block__item-text">
+              Любых размеров <br>и сложности
+            </p>
+          </li>
+        </ul>
+        <a class="front-block__btn _main-btn" href="#callback" data-fancybox>
+          Оставить заявку
+        </a>
+      </div>
+      <div class="front-block__right">
+        <div class="front-block__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="front-block__slide swiper-slide">
+              <a class="front-block__slide-wrapper" href="images/front-block-3.webp" data-fancybox>
+                <img class="front-block__slide-img _img" src="images/front-block-3.webp" alt="front-block-1">
+              </a>
+            </div>
+            <div class="front-block__slide swiper-slide">
+              <a class="front-block__slide-wrapper" href="images/front-block-4.webp" data-fancybox>
+                <img class="front-block__slide-img _img" src="images/front-block-4.webp" alt="front-block-2">
+              </a>
+            </div>
+            <div class="front-block__slide swiper-slide">
+              <a class="front-block__slide-wrapper" href="images/front-block-3.webp" data-fancybox>
+                <img class="front-block__slide-img _img" src="images/front-block-3.webp" alt="front-block-3">
+              </a>
+            </div>
+            <div class="front-block__slide swiper-slide">
+              <a class="front-block__slide-wrapper" href="images/front-block-4.webp" data-fancybox>
+                <img class="front-block__slide-img _img" src="images/front-block-4.webp" alt="front-block-4">
+              </a>
             </div>
           </div>
+          <div class="swiper-button-prev _icon-arrow _icon-white"></div>
+          <div class="swiper-button-next _icon-arrow _icon-white"></div>
+          <div class="swiper-pagination"></div>
         </div>
-      </form>
+      </div>
     </div>
   </div>
 </section>
+  <section class="service-standard">
+  <div class="container">
+    <h2 class="service-standard__title _title">
+      Высший стандарт <span>обслуживания</span>
+    </h2>
+    <div class="service-standard__items">
+      <div class="service-standard__item">
+        <div class="service-standard__item-icon">
+          <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M35.093 16.4583L11.8546 29.875M35.093 16.4583L37.1976 8.60369M35.093 16.4583L42.9476 18.563M11.8546 29.875L4 27.7704M11.8546 29.875L9.75 37.7296M35.0928 29.8747L11.8545 16.4581M35.0928 29.8747L42.9477 27.7701M35.0928 29.8747L37.1977 37.7294M11.8545 16.4581L9.75027 8.6039M11.8545 16.4581L4.00027 18.5632M23.4738 9.75L23.4738 36.5833M23.4738 9.75L17.7238 4M23.4738 9.75L29.2238 4M23.4738 36.5833L17.7238 42.3333M23.4738 36.5833L29.2238 42.3333" stroke="#FC4C02" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+        </div>
+        <h4 class="service-standard__item-title">
+          Опыт работы <br>в сложных
+        </h4>
+        <p class="service-standard__item-text">
+          климатических <br>условиях
+        </p>
+      </div>
+      <div class="service-standard__item">
+        <div class="service-standard__item-icon">
+          <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.2021 24.7113C38.6697 29.7136 35.8353 34.4012 31.1453 37.109C23.3531 41.6079 13.3893 38.9381 8.89044 31.1459L8.41128 30.3159M6.7969 21.2887C7.32935 16.2864 10.1637 11.5988 14.8538 8.89096C22.6459 4.39214 32.6098 7.06194 37.1086 14.8541L37.5878 15.6841M6.69531 34.6264L8.09841 29.39L13.3348 30.7931M32.6643 15.2068L37.9008 16.6099L39.3039 11.3735M22.9996 14.375V23L27.7913 25.875" stroke="#FC4C02" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+          
+        </div>
+        <h4 class="service-standard__item-title">
+          24/7
+        </h4>
+        <p class="service-standard__item-text">
+          Оперативная <br>постгарантийная<br>
+          поддержка
+        </p>
+      </div>
+      <div class="service-standard__item">
+        <div class="service-standard__item-icon">
+          
+          <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.0007 28.7502C26.1763 28.7502 28.7507 26.1758 28.7507 23.0002C28.7507 19.8245 26.1763 17.2502 23.0007 17.2502C19.825 17.2502 17.2507 19.8245 17.2507 23.0002C17.2507 26.1758 19.825 28.7502 23.0007 28.7502Z" stroke="#FC4C02" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M35.8946 28.2274C35.6626 28.753 35.5935 29.336 35.6959 29.9012C35.7984 30.4664 36.0679 30.988 36.4696 31.3986L36.5741 31.5032C36.8981 31.8268 37.1552 32.2112 37.3306 32.6342C37.5059 33.0573 37.5962 33.5108 37.5962 33.9687C37.5962 34.4267 37.5059 34.8802 37.3306 35.3032C37.1552 35.7263 36.8981 36.1106 36.5741 36.4343C36.2505 36.7583 35.8661 37.0153 35.4431 37.1907C35.02 37.366 34.5666 37.4563 34.1086 37.4563C33.6506 37.4563 33.1972 37.366 32.7741 37.1907C32.3511 37.0153 31.9667 36.7583 31.6431 36.4343L31.5385 36.3297C31.1279 35.928 30.6063 35.6586 30.0411 35.5561C29.4758 35.4536 28.8929 35.5228 28.3673 35.7547C27.852 35.9756 27.4124 36.3423 27.1029 36.8098C26.7933 37.2773 26.6271 37.8251 26.6249 38.3858V38.682C26.6249 39.6062 26.2577 40.4926 25.6042 41.1461C24.9507 41.7997 24.0643 42.1668 23.14 42.1668C22.2158 42.1668 21.3294 41.7997 20.6759 41.1461C20.0223 40.4926 19.6552 39.6062 19.6552 38.682V38.5252C19.6417 37.9484 19.455 37.3891 19.1194 36.9199C18.7838 36.4506 18.3148 36.0932 17.7734 35.8941C17.2478 35.6622 16.6649 35.593 16.0996 35.6955C15.5344 35.7979 15.0128 36.0674 14.6022 36.4691L14.4976 36.5736C14.174 36.8977 13.7896 37.1547 13.3666 37.3301C12.9435 37.5054 12.4901 37.5957 12.0321 37.5957C11.5741 37.5957 11.1207 37.5054 10.6976 37.3301C10.2745 37.1547 9.89021 36.8977 9.56656 36.5736C9.24255 36.25 8.98551 35.8657 8.81014 35.4426C8.63477 35.0196 8.5445 34.5661 8.5445 34.1081C8.5445 33.6502 8.63477 33.1967 8.81014 32.7736C8.98551 32.3506 9.24255 31.9662 9.56656 31.6426L9.67111 31.538C10.0728 31.1274 10.3423 30.6058 10.4447 30.0406C10.5472 29.4753 10.478 28.8924 10.2461 28.3668C10.0252 27.8515 9.65848 27.412 9.19101 27.1024C8.72353 26.7928 8.17573 26.6266 7.61505 26.6244H7.31883C6.39459 26.6244 5.50821 26.2573 4.85467 25.6037C4.20114 24.9502 3.83398 24.0638 3.83398 23.1396C3.83398 22.2153 4.20114 21.3289 4.85467 20.6754C5.50821 20.0219 6.39459 19.6547 7.31883 19.6547H7.47565C8.05238 19.6412 8.61172 19.4545 9.08095 19.1189C9.55017 18.7833 9.90758 18.3143 10.1067 17.7729C10.3387 17.2473 10.4078 16.6644 10.3054 16.0991C10.2029 15.5339 9.9334 15.0123 9.53171 14.6017L9.42717 14.4971C9.10316 14.1735 8.84612 13.7891 8.67075 13.3661C8.49537 12.943 8.40511 12.4896 8.40511 12.0316C8.40511 11.5736 8.49537 11.1202 8.67075 10.6971C8.84612 10.2741 9.10316 9.88972 9.42717 9.56607C9.75081 9.24206 10.1352 8.98502 10.5582 8.80965C10.9813 8.63428 11.4347 8.54401 11.8927 8.54401C12.3507 8.54401 12.8041 8.63428 13.2272 8.80965C13.6502 8.98502 14.0346 9.24206 14.3582 9.56607L14.4628 9.67062C14.8734 10.0723 15.395 10.3418 15.9602 10.4443C16.5255 10.5467 17.1084 10.4776 17.634 10.2456H17.7734C18.2887 10.0247 18.7283 9.65799 19.0378 9.19052C19.3474 8.72304 19.5136 8.17525 19.5158 7.61456V7.31834C19.5158 6.39411 19.883 5.50772 20.5365 4.85418C21.19 4.20065 22.0764 3.8335 23.0007 3.8335C23.9249 3.8335 24.8113 4.20065 25.4648 4.85418C26.1183 5.50772 26.4855 6.39411 26.4855 7.31834V7.47516C26.4877 8.03585 26.6539 8.58365 26.9635 9.05113C27.273 9.5186 27.7126 9.88535 28.2279 10.1062C28.7535 10.3382 29.3364 10.4074 29.9017 10.3049C30.4669 10.2024 30.9885 9.93292 31.3991 9.53122L31.5037 9.42668C31.8273 9.10267 32.2117 8.84563 32.6347 8.67026C33.0578 8.49489 33.5112 8.40462 33.9692 8.40462C34.4272 8.40462 34.8806 8.49489 35.3037 8.67026C35.7268 8.84563 36.1111 9.10267 36.4347 9.42668C36.7587 9.75033 37.0158 10.1347 37.1912 10.5577C37.3665 10.9808 37.4568 11.4342 37.4568 11.8922C37.4568 12.3502 37.3665 12.8036 37.1912 13.2267C37.0158 13.6498 36.7587 14.0341 36.4347 14.3577L36.3302 14.4623C35.9285 14.8729 35.659 15.3945 35.5566 15.9597C35.4541 16.525 35.5233 17.108 35.7552 17.6335V17.7729C35.9761 18.2882 36.3428 18.7278 36.8103 19.0374C37.2778 19.3469 37.8256 19.5131 38.3863 19.5153H38.6825C39.6067 19.5153 40.4931 19.8825 41.1466 20.536C41.8002 21.1895 42.1673 22.0759 42.1673 23.0002C42.1673 23.9244 41.8002 24.8108 41.1466 25.4643C40.4931 26.1179 39.6067 26.485 38.6825 26.485H38.5257C37.965 26.4872 37.4172 26.6534 36.9497 26.963C36.4822 27.2726 36.1155 27.7121 35.8946 28.2274Z" stroke="#FC4C02" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+        </div>
+        <h4 class="service-standard__item-title">
+          Модернизация
+        </h4>
+        <p class="service-standard__item-text">
+          и ремонт шатров
+        </p>
+      </div>
+      <div class="service-standard__item">
+        <div class="service-standard__item-icon">
+          <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.75 20.2496C5.75 19.1488 5.75 18.5983 5.89189 18.0915C6.01757 17.6424 6.22412 17.2201 6.50139 16.8452C6.8144 16.422 7.24887 16.0841 8.11783 15.4083L21.1172 5.2976C21.7906 4.77387 22.1273 4.512 22.4991 4.41134C22.8271 4.32252 23.1729 4.32252 23.5009 4.41134C23.8727 4.512 24.2094 4.77387 24.8828 5.2976L37.8822 15.4083C38.7511 16.0841 39.1856 16.422 39.4986 16.8452C39.7759 17.2201 39.9824 17.6424 40.1081 18.0915C40.25 18.5983 40.25 19.1488 40.25 20.2496V34.1166C40.25 36.2634 40.25 37.3369 39.8322 38.1569C39.4647 38.8782 38.8783 39.4646 38.157 39.8321C37.337 40.2499 36.2635 40.2499 34.1167 40.2499H11.8833C9.73647 40.2499 8.66303 40.2499 7.84304 39.8321C7.12175 39.4646 6.53532 38.8782 6.16781 38.1569C5.75 37.3369 5.75 36.2634 5.75 34.1166V20.2496Z" stroke="#FC4C02" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+          
+        </div>
+        <h4 class="service-standard__item-title">
+          Хранение
+        </h4>
+        <p class="service-standard__item-text">
+          в специализированных<br>
+          условиях
+        </p>
+      </div>
+      <div class="service-standard__item">
+        <div class="service-standard__item-icon">
+          <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.4583 38.3335H9.58333C7.46624 38.3335 5.75 36.6173 5.75 34.5002V7.66683C5.75 5.54974 7.46624 3.8335 9.58333 3.8335H36.4167C38.5338 3.8335 40.25 5.54974 40.25 7.66683V34.5002C40.25 36.6173 38.5338 38.3335 36.4167 38.3335H33.5417M23 36.4168C26.1756 36.4168 28.75 33.8425 28.75 30.6668C28.75 27.4912 26.1756 24.9168 23 24.9168C19.8244 24.9168 17.25 27.4912 17.25 30.6668C17.25 33.8425 19.8244 36.4168 23 36.4168ZM23 36.4168L23.0411 36.4164L16.9216 42.5359L11.5005 37.1148L17.2877 31.3276M23 36.4168L29.1196 42.5359L34.5407 37.1148L28.7535 31.3276M17.25 11.5002H28.75M13.4167 18.2085H32.5833" stroke="#FC4C02" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+        </div>
+        <h4 class="service-standard__item-title">
+          Сертифицированные
+        </h4>
+        <p class="service-standard__item-text">
+          специалисты <br>и орудование
+        </p>
+      </div>
+    </div>
+    <div class="service-standard__elems">
+      <div class="service-standard__elem">
+        <img class="service-standard__elem-img _img" src="images/service-standard-1.webp" alt="service-standard__elem-1">
+        <div class="overlay"></div>
+        <div class="service-standard__elem-inner">
+          <h4 class="service-standard__elem-title">
+            Мы создаем пространство, в котором<br>
+            эстетика встречается с функциональностью,<br>
+            а клиентский сервис выходит за рамки<br>
+            стандартных ожиданий.
+          </h4>
+          <p class="service-standard__elem-text">
+            Каждый шатер — это не просто конструкция, а продолжение вашего <br>бизнеса, вашего комфорта, вашей истории.
+            Именно<br> поэтому
+            мы остаемся рядом даже после завершения сделки.
+          </p>
+        </div>
+      </div>
+      <div class="service-standard__elem">
+        <img class="service-standard__elem-img _img" src="images/service-standard-2.webp" alt="service-standard__elem-2">
+        <div class="overlay"></div>
+        <div class="service-standard__elem-inner">
+          <h4 class="service-standard__elem-title">
+            Наши сервисные программы<br> разработаны так, чтобы обеспечивать <br>вашему шатру
+            идеальное состояние<br> и долгий срок службы
+          </h4>
+          <p class="service-standard__elem-text">
+            Идеальное состояние и долгий срок службы. Вне зависимости <br>от того, требуется ли вам регулярное
+            техническое<br>
+            обслуживание,
+            аварийный ремонт или сезонное хранение<br>
+            тента, вы можете рассчитывать на нас.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
 
 </main>
 <footer class="footer">
@@ -803,8 +458,8 @@
       <label class="modal__checkbox-block checkbox-block">
         <input type="checkbox" name="access" required checked>
         <span>
-          <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M9.24334 2.50072L5.00034 6.74572C4.60934 7.13672 3.97634 7.13672 3.58634 6.74572L0.757344 3.91372C0.367344 3.52372 0.367344 2.89672 0.757344 2.50072C1.14834 2.10672 1.78134 2.10672 2.17234 2.50072L4.29334 4.62372L7.82834 1.08772C8.21934 0.694719 8.85234 0.694719 9.24334 1.08772C9.63334 1.48372 9.63334 2.10672 9.24334 2.50072Z" fill="#EB6C2D"/>
+          <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 7.32575L6.74991 11.0728L15 2.82275" stroke="white" stroke-width="4.22287" stroke-linecap="round"/>
 </svg>
 
         </span>
@@ -849,7 +504,7 @@
     </div>
   </div>
 </div>
-<div class="quiz-block__inner" id="quiz-modal" style="display: none;">
+<!-- <div class="quiz-block__inner" id="quiz-modal" style="display: none;">
   <div class="container">
     <form class="quiz quiz-block__form form-submit" action="#" method="POST" enctype="multipart/form-data" novalidate>
       <input type="hidden" name="from" value="Опрос в модальном окне">
@@ -1522,8 +1177,8 @@
             <label class="section-13__checkbox-block checkbox-block">
               <input type="checkbox" name="access" required checked>
               <span>
-                <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M9.24334 2.50072L5.00034 6.74572C4.60934 7.13672 3.97634 7.13672 3.58634 6.74572L0.757344 3.91372C0.367344 3.52372 0.367344 2.89672 0.757344 2.50072C1.14834 2.10672 1.78134 2.10672 2.17234 2.50072L4.29334 4.62372L7.82834 1.08772C8.21934 0.694719 8.85234 0.694719 9.24334 1.08772C9.63334 1.48372 9.63334 2.10672 9.24334 2.50072Z" fill="#EB6C2D"/>
+                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 7.32575L6.74991 11.0728L15 2.82275" stroke="white" stroke-width="4.22287" stroke-linecap="round"/>
 </svg>
 
               </span>
@@ -1539,7 +1194,7 @@
       </div>
     </form>
   </div>
-</div>
+</div> -->
 
 
 
