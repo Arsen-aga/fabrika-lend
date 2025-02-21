@@ -64,13 +64,13 @@ a {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 50px;
-  max-width: 1880px;
-  margin: 0 auto;
+}
 
-  @include md {
-    border-radius: 26px;
-  }
+._section-middle {
+  max-width: var(--container-middle);
+  margin: var(--indent) auto 0;
+  border-radius: 22px;
+  padding-bottom: var(--indent);
 }
 
 
@@ -93,7 +93,7 @@ a {
   line-height: 0;
 }
 
-.visible-hand {
+.cursor {
   display: none;
 
   path {
@@ -210,7 +210,7 @@ a {
   }
 }
 
-.swiper-pagination{
+.swiper-pagination {
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -240,21 +240,381 @@ a {
     &::before {
       position: absolute;
       content: '';
-      width: 10px;
-      height: 10px;
+      width: 5px;
+      height: 5px;
       border-radius: 50%;
       background-color: var(--primary);
       left: 0;
-      top: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+  position: relative;
+
+  @include md {
+    border-radius: 30px;
+  }
+
+  @include sm {
+    padding: 30px !important;
+  }
+
+  @include xs {
+    padding: 20px 15px !important;
+  }
+
+  &_black {
+    color: #fff;
+    background-color: rgb(40, 40, 40);
+
+    .form__title,
+    .form__subtitle {
+      color: #fff;
+    }
+
+    .form__check label:before {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .form__tz label {
+      color: rgb(252, 76, 2);
+      background-color: transparent;
+      border: 1px solid rgba(241, 241, 241, 0.3);
+      max-width: 100%;
+    }
+
+    .form__docs {
+      right: -79px;
+
+      @include xl {
+        right: -48px;
+      }
+
+      @include sm {
+        display: none;
+      }
+    }
+
+    .form__items_horizontal .form__input {
+      max-width: 330px !important;
+
+      @include lg {
+        max-width: 100% !important;
+      }
+    }
+
+    .form__items_horizontal .form__tz {
+      max-width: 364px !important;
+
+      @include lg {
+        max-width: 100% !important;
+      }
+    }
+
+    .form__footer {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+
+  &__title {
+    font-size: 36px;
+    color: rgb(40, 40, 40);
+    font-weight: 500;
+    line-height: 122.222222%;
+    text-align: left;
+
+    @include lg {
+      @include adaptiveValue("font-size", 32, 22, 992, 320, 1);
+    }
+
+    b {
+      font-weight: 500;
+    }
+
+    &_32 {
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 125%;
+
+      @include lg {
+        @include adaptiveValue("font-size", 27, 20, 992, 320, 1);
+      }
+    }
+
+    @include md {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-top: 15px;
+    color: rgb(40, 40, 40);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 136.363636%;
+    letter-spacing: 0%;
+    text-align: left;
+
+    b {
+      font-weight: 500;
+    }
+
+    @include md {
+      font-size: 20px;
+
+      br {
+        display: none;
+      }
+
+      margin-top: 10px;
+    }
+
+    @include sm {
+      font-size: 18px;
+    }
+
+    @include xs {
+      font-size: 16px;
+    }
+  }
+
+
+  &__inner {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include md {
+      margin-top: 20px;
+    }
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__items {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    &_horizontal {
+      flex-direction: row;
+
+      @include lg {
+        gap: 10px;
+
+        .form__button {
+          max-width: 100% !important;
+        }
+
+
+        flex-wrap: wrap;
+      }
+
+      .form__input,
+      .form__tz {
+        max-width: calc(50% - 6px) !important;
+      }
+
+      @include md {
+
+        .form__input,
+        .form__tz label,
+        .form__tz {
+          max-width: 100% !important;
+        }
+      }
+    }
+  }
+
+
+  &__input {
+    width: 100%;
+    max-width: 410px;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 12px;
+    background: rgb(250, 251, 252);
+    height: 90px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 144.444444%;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-left: 32px;
+    padding-right: 15px;
+
+    @include xs {
+      height: 75px;
+    }
+  }
+
+
+  &__tz {
+    width: 100%;
+    max-width: 330px;
+
+    label {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 144.444444%;
+      letter-spacing: 0%;
+      text-align: left;
+
+      height: 90px;
+      border: 1px solid rgb(241, 241, 241);
+      border-radius: 12px;
+      width: 100%;
+      display: flex;
+      background: rgb(255, 255, 255);
+      max-width: 330px;
+      padding: 0 10px;
+      padding-left: 32px;
+      align-items: center;
+      color: rgb(252, 76, 2);
+      gap: 10px;
+      cursor: pointer;
+
+      @include xs {
+        height: 75px;
+        padding-left: 20px;
+      }
+
+      &::before {
+        font-size: 26px;
+      }
+    }
+
+    input {
+      display: none;
+    }
+  }
+
+
+  &__button {
+    width: 100%;
+    height: 90px;
+    max-width: 410px;
+
+    @include xs {
+      height: 75px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 17px;
+    align-self: flex-start;
+
+    &_vertical {
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+      padding-top: 40px;
+      margin-top: 35px;
+      border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
+
+      @include md {
+        padding-top: 10px;
+      }
+    }
+
+    @include xl {
+      gap: 20px;
+    }
+
+    @include md {
+      flex-direction: column;
+      align-items: center;
+      margin-inline: auto;
+      gap: 5px;
+      margin-top: 10px;
+    }
+  }
+
+  &__callback {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap: 10px;
+    font-size: 22px;
+
+    @include xl {
+      font-size: 20px;
+    }
+
+    @include lg {
+      font-size: 18px;
+    }
+
+    &::before {
+      font-size: 22px;
+    }
+
+    a {
+      color: inherit;
+      font-weight: 400;
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+
+    @include xl {
+      font-size: 19px;
+    }
+  }
+
+  &__docs {
+    position: absolute;
+    bottom: 0;
+    right: -79px;
+
+    @include xl {
+      max-width: 370px;
+    }
+
+    @include lg {
+      max-width: 340px;
+    }
+
+    @include xs {
+      display: none;
+    }
+  }
+
+  .checkbox-block {
+    svg path {
+      stroke: var(--primary);
     }
   }
 }
 
 .checkbox-block {
   display: flex;
-  gap: 5px;
+  gap: 7px;
   cursor: pointer;
   font-size: 12px;
+  color: var(--border);
 
   input {
     display: none !important;
@@ -265,10 +625,11 @@ a {
   }
 
   span {
+    margin-top: 3px;
     min-width: 16px;
     height: 16px;
     border-radius: 4px;
-    background-color: var(--light-color);
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -276,6 +637,7 @@ a {
   }
 
   svg {
+    width: 9px;
     display: none;
   }
 }
@@ -396,7 +758,6 @@ a {
 
 
 
-// Возможно надо будет удалить
 .check-labels {
   display: grid;
   gap: 10px;

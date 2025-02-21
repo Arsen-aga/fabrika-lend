@@ -1,8 +1,16 @@
+$minWidth: 320;
+$maxWidthContainer: 1200;
+$maxWidth: 1920;
+$containerWidth: 1230;
+
 :root {
   // НЕЛЬЗЯ УДАЛЯТЬ ЭТИ ПЕРЕМЕННЫЕ
 
   // контейнер
+  --container-max-width: 1920px;
   --container-width: 1200px;
+  --container-middle: 1560px;
+  --container-min-width: 320px;
   --container-padding: 15px;
 
   // шрифты
@@ -30,17 +38,17 @@
   // ЗДЕСЬ МОЖНО ПРОПИСЫВАТЬ СВОИ ПЕРЕМЕННЫЕ
   --primary: #FC4C02;
   --primary-hover: #ff6423;
+  --border: #939393;
+  --bg-standart: #F2F2F2;
 
   
   --accent: #232C35;
-  --border: #f1f1f1;
   --section-bg: #f1f1f1;
   --placeholder: #A2A2A2;
   --input: #FAFBFC;
   
   --bg: rgba(129, 95, 72, 0.63);
   --def-text: #F5F5F5;
-  --bg-standart: #F3F3F3;
   --bg-form: #F9F9F9;
   --danger: #E10000;
   --light-color: #FFFFFF;

@@ -1,0 +1,51 @@
+<section class="average-cost">
+  <div class="container">
+    <form action="#" method="POST" action="#" enctype="multipart/form-data" class="average-cost__form form form-submit">
+      <div class="form__content">
+        <input type="hidden" name="from" value="Подготовим лучшее предложение">
+        <h2 class="form__title ">
+          Средняя стоимость: <br>от <span>15 000 до 50 000 ₽</span> за сезон
+        </h2>
+        <h3 class="form__subtitle">
+          заполнив форму ниже
+        </h3>
+        <div class="form__inner">
+          <div class="form__items form__items_horizontal">
+            <input type="tel" class="form__input form-control" name="phone" placeholder="Введите ваш телефон"
+              required="">
+
+            <div class="form__tz">
+              <input
+                accept="image/*, .doc, .docx, .xml, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document, application/pdf"
+                id="file" name="file" type="file">
+              <label class="_icon-svg-add _icon-tz _icon-orange" for="file">
+
+                  Прикрепить ТЗ при наличии</label>
+              <span id="file-name"></span>
+            </div>
+            <button class="form__button _main-btn" type="submit">Оставить заявку</button>
+          </div>
+          <div class="form__footer ">
+            <p class="form__callback _icon-phone _icon-orange _main-text">
+              <span>Или звоните <a href="tel:+78001001010">+7 800 100 10 10</a></span>
+            </p>
+            <label class="checkbox-block">
+              <input type="checkbox" name="access" required checked>
+              <span>
+                @@include('../../images/icons/check.svg')
+              </span>
+              <p>
+                Я принимаю условия <a data-fancybox="" class="_link" href="#politics" data-fancybox="">политики
+                  конфиденциальности</a>
+              </p>
+            </label>
+          </div>
+
+        </div>
+      </div>
+      <div class="form__docs">
+        <img src="images/average-cost-1.webp" alt="average-cost-1">
+      </div>
+    </form>
+  </div>
+</section>

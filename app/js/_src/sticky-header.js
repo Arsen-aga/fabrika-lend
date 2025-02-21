@@ -1,4 +1,4 @@
-const header = document.querySelector(".header");
+const header = document.querySelector(".header-bottom");
 
 if (header) {
   function checkСoordinatesElem(elem) {
@@ -8,9 +8,9 @@ if (header) {
       const coordWindow = window.scrollY;
       // если координаты окна больше 80, то добавляем класс, иначе - нет
       if (coordWindow > 350) {
-        elem.classList.add("active");
+        elem.classList.add("sticky");
       } else {
-        elem.classList.remove("active");
+        elem.classList.remove("sticky");
       }
     });
   }

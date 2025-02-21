@@ -1,0 +1,54 @@
+.washing-process {
+  padding-top: var(--indent);
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    @include xl {
+      gap: 15px;
+    }
+
+    @include lg {
+      grid-auto-flow: column;
+      padding-bottom: 10px;
+      overflow-x: auto;
+    }
+  }
+
+  &__item {
+    @include lg {
+      width: 300px;
+    }
+  }
+
+  &__item-wrapper {
+    position: relative;
+    padding-bottom: calc(200/285*100%);
+    border-radius: 22px;
+    overflow: hidden;
+  }
+
+  &__item-info {
+    padding: 20px 10px;
+
+    @include xl {
+      padding: 10px;
+    }
+  }
+
+  &__item-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(22/16*100%);
+  }
+
+  &__item-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(22/14*100%);
+    margin-top: 8px;
+  }
+
+}

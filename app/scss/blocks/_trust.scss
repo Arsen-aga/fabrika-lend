@@ -1,0 +1,62 @@
+.trust {
+  padding-top: var(--indent);
+
+  &__slider-wrapp {
+    max-width: 1000px;
+    margin-inline: auto;
+
+    @include xl {
+      max-width: 970px;
+    }
+
+
+    @include lg {
+      max-width: 750px;
+    }
+
+    @include md {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+  }
+}
+
+.osn-slider {
+  position: relative;
+  margin-top: 50px;
+
+  @include md {
+    margin-top: 30px;
+  }
+
+
+  &__photo {
+    display: block;
+    padding-bottom: 60%;
+    border-radius: 22px;
+    overflow: hidden;
+    position: relative;
+  }
+
+
+  &__arrow {
+    width: 40px;
+    height: 40px;
+
+    &_next {
+      right: 40px;
+
+      @include md {
+        right: 15px;
+      }
+    }
+
+    &_prev {
+      left: 40px;
+
+      @include md {
+        left: 15px;
+      }
+    }
+  }
+}

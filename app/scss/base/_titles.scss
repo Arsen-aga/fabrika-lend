@@ -13,19 +13,15 @@
 
   @include lg {
     margin-bottom: 42px;
+    @include adaptiveValue("font-size", 55, 30, 992, 320, 1);
   }
 
   @include md {
-    font-size: 32px;
     margin-bottom: 20px;
 
     br {
       display: none;
     }
-  }
-
-  @include sm {
-    font-size: 28px;
   }
 
   span {
@@ -36,13 +32,14 @@
 ._title-light {
   font-family: var(--font-default);
   font-weight: 400;
-  font-size: 38px;
+  font-size: 62px;
   line-height: 130%;
+  text-align: center;
   color: var(--light-color);
   margin-bottom: 50px;
 
   @include xl {
-    font-size: 32px;
+    font-size: 50px;
     margin-bottom: 40px;
 
     br {
@@ -52,40 +49,38 @@
 
   @include lg {
     margin-bottom: 30px;
+    @include adaptiveValue("font-size", 55, 30, 992, 320, 1);
   }
 
   @include md {
-    font-size: 30px;
     margin-bottom: 20px;
 
   }
 
-  @include sm {
-    font-size: 28px;
-  }
-
   span {
-    font-weight: 700;
     color: var(--primary);
   }
 }
 
 
 ._subtitle {
+  margin-top: 15px;
   font-weight: 400;
-  font-size: 26px;
-  line-height: calc(34/26*100%);
+  font-size: 18px;
+  line-height: calc(26/18*100%);
   text-align: center;
+  opacity: 0.6;
   color: var(--default-color);
   margin-bottom: 50px;
 
   @include xl {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   @include lg {
-    font-size: 24px;
-    margin-bottom: 25px;
+    @include adaptiveValue("font-size", 18, 16, 992, 320, 1);
+    margin-bottom: 30px;
+    margin-top: 10px;
 
     br {
       display: none;
@@ -94,6 +89,5 @@
 
   @include md {
     margin-bottom: 20px;
-
   }
 }

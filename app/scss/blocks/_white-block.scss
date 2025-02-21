@@ -1,0 +1,12 @@
+.white-block{
+  background-color: var(--light-color);
+}
+
+.dark-block{
+  margin-top: var(--indent);
+  padding-bottom: var(--indent);
+  background-image: url(../images/dark-block-bg.webp);
+}
+.gray-block{
+  background-color: var(--bg-standart);
+}

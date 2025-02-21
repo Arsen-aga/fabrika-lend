@@ -1,0 +1,84 @@
+.washing-agent {
+  padding-top: var(--indent);
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @include xl {
+      gap: 15px;
+    }
+
+    @include lg {
+      grid-auto-flow: column;
+      padding-bottom: 10px;
+      overflow-x: auto;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-bottom: calc(580/380*100%);
+    overflow: hidden;
+    border-radius: 20px;
+
+    @include xl {
+      .overlay {
+        display: block;
+        background-color: rgba($color: #ffffff, $alpha: 0.5);
+      }
+    }
+
+    @include lg {
+      width: 300px;
+    }
+  }
+
+  &__item-inner {
+    position: absolute;
+    padding: 35px 30px;
+
+    @include xl {
+      padding: 25px 20px;
+    }
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28/24*100%);
+
+    @include xl {
+      font-size: 22px;
+    }
+
+    @include lg {
+      font-size: 20px;
+    }
+  }
+
+  &__item-list {
+    margin-top: 20px;
+    display: grid;
+    gap: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+
+    @include xl {
+      margin-top: 15px;
+      gap: 8px;
+    }
+
+    @include lg {
+      margin-top: 10px;
+    }
+
+
+  }
+}

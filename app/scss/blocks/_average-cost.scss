@@ -1,0 +1,40 @@
+.average-cost {
+  .form {
+    margin-top: 80px;
+    padding: 60px 70px 53px 70px;
+
+    @include xl {
+      padding: 50px;
+    }
+
+    @include md {
+      margin-top: 30px;
+    }
+
+    &__title{
+      span{
+        color: var(--primary);
+      }
+    }
+
+    &__button {
+      max-width: 380px;
+    }
+
+    &__input {
+      max-width: 330px !important;
+
+      @include lg {
+          max-width: calc(50% - 6px) !important;
+      }
+
+      @include md {
+          max-width: none !important;
+      }
+    }
+
+    &__tz label {
+      max-width: 350px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.personalized-service {
+  &__form {
+    margin-top: 80px;
+    padding: 60px 70px 53px 70px;
+
+    @include xl {
+      padding: 50px;
+    }
+
+    @include md {
+      margin-top: 30px;
+    }
+  }
+}

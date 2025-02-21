@@ -1,5 +1,5 @@
 if (document.querySelectorAll(".bg-swiper")?.length > 0) {
-  document.querySelectorAll(".bg-swiper").forEach(swiper => {
+  document.querySelectorAll(".bg-swiper").forEach((swiper) => {
     const prev = swiper.parentElement.querySelector(".swiper-button-prev");
     const next = swiper.parentElement.querySelector(".swiper-button-next");
     new Swiper(swiper, {
@@ -9,7 +9,7 @@ if (document.querySelectorAll(".bg-swiper")?.length > 0) {
         nextEl: next,
       },
     });
-  })
+  });
 }
 if (document.querySelector(".front-block__swiper")) {
   new Swiper(".front-block__swiper", {
@@ -24,179 +24,60 @@ if (document.querySelector(".front-block__swiper")) {
     },
   });
 }
-if (document.querySelector(".section-3__swiper")) {
-  new Swiper(".section-3__swiper", {
-    slidesPerView: "auto",
-    spaceBetween: 15,
-    navigation: {
-      nextEl: ".section-3__swiper-wrapper .swiper-button-next",
-      prevEl: ".section-3__swiper-wrapper .swiper-button-prev",
-    },
-    pagination: {
-      el: ".section-3__swiper-wrapper .swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      991.8: {
-        slidesPerView: 3,
-        spaceBetween: 20,
+if (document.querySelectorAll(".swiper-container")?.length > 0) {
+  document.querySelectorAll(".swiper-container").forEach((swiperWrapper) => {
+    const swiper = swiperWrapper.querySelector(".main-slider");
+    const pagination = swiperWrapper.querySelector(".main-slider__pagination");
+    const next = swiperWrapper.querySelector(".main-slider__button_next");
+    const prev = swiperWrapper.querySelector(".main-slider__button_prev");
+    new Swiper(swiper, {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: pagination,
+        type: "fraction",
+        clickable: true,
       },
-    },
-  });
-}
-if (document.querySelector(".section-5__swiper")) {
-  new Swiper(".section-5__swiper", {
-    slidesPerView: 1,
-    spaceBetween: 15,
-    navigation: {
-      nextEl: ".section-5__swiper-wrapper .swiper-button-next",
-      prevEl: ".section-5__swiper-wrapper .swiper-button-prev",
-    },
-    pagination: {
-      el: ".section-5__swiper-wrapper .swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      468: {
-        slidesPerView: 2,
+      navigation: {
+        nextEl: next,
+        prevEl: prev,
       },
-      991.8: {
-        slidesPerView: 3,
-      },
-      1230: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-    },
-  });
-}
-if (document.querySelector(".section-7__swipers")) {
-  const swiper = new Swiper(".section-7__thumbswiper", {
-    spaceBetween: 10,
-    slidesPerView: "auto",
-    breakpoints: {
-      991.8: {
-        slidesPerView: 4,
-      },
-      1230: {
-        slidesPerView: 5,
-      },
-    },
-  });
-  new Swiper(".section-7__swiper", {
-    navigation: {
-      nextEl: ".section-7__swipers .swiper-button-next",
-      prevEl: ".section-7__swipers .swiper-button-prev",
-    },
-    spaceBetween: 10,
-    thumbs: {
-      swiper: swiper,
-    },
-  });
-}
-if (document.querySelector(".section-10__swiper")) {
-  new Swiper(".section-10__swiper", {
-    spaceBetween: 30,
-    slidesPerView: "auto",
-    pagination: {
-      el: ".section-10__control .swiper-pagination",
-      type: "fraction",
-    },
-    navigation: {
-      nextEl: ".section-10__control .swiper-button-next",
-      prevEl: ".section-10__control .swiper-button-prev",
-    },
-  });
-}
-if (document.querySelector(".section-14__swiper-big")) {
-  new Swiper(".section-14__swiper-big", {
-    spaceBetween: 5,
-    slidesPerView: 1,
-    touchMove: false,
-    draggable: false,
-    pagination: {
-      el: ".section-14__control .swiper-pagination",
-      type: "fraction",
-    },
-    navigation: {
-      nextEl: ".section-14__control .swiper-button-next",
-      prevEl: ".section-14__control .swiper-button-prev",
-    },
-    breakpoints: {
-      767.98: {
-        slidesPerView: 2,
-      },
-      991.8: {
-        slidesPerView: 3,
-      },
-    },
-  });
-}
-if (document.querySelectorAll(".section-14__slide").length > 0) {
-  const swipers = document.querySelectorAll(".section-14__slide-top");
-  if (swipers.length > 0) {
-    swipers.forEach((swiperTop) => {
-      const top = swiperTop.querySelector(".section-14__swiper");
-      const bottom = swiperTop.querySelector(".section-14__thumbswiper");
-      const prev = swiperTop.querySelector(
-        ".section-14__swiper .swiper-button-prev"
-      );
-      const next = swiperTop.querySelector(
-        ".section-14__swiper .swiper-button-next"
-      );
-
-      const thumbSwiper = new Swiper(bottom, {
-        spaceBetween: 8,
-        slidesPerView: 4,
-      });
-      new Swiper(top, {
-        spaceBetween: 10,
-        navigation: {
-          nextEl: next,
-          prevEl: prev,
+      breakpoints: {
+        1230: {
+          slidesPerView: 3,
         },
-        thumbs: {
-          swiper: thumbSwiper,
+        991.98: {
+          slidesPerView: 3,
+          spaceBetween: 30,
         },
-      });
+        767.98: {
+          slidesPerView: 2,
+        },
+        575.98: {
+          slidesPerView: 1.8,
+        },
+      },
     });
-  }
+  });
 }
-if (document.querySelector(".section-21__swiper")) {
-  new Swiper(".section-21__swiper", {
-    spaceBetween: 15,
-    slidesPerView: "auto",
+if (document.querySelector(".osn-slider")) {
+  new Swiper(".osn-slider", {
+    slidesPerView: 1,
+    spaceBetween: 50,
+    navigation: {
+      nextEl: ".osn-slider__arrow_next",
+      prevEl: ".osn-slider__arrow_prev",
+    },
+    centeredSlides: true,
     loop: true,
     centeredSlides: true,
-    autoplay: {
-      delay: 4000,
-    },
-    breakpoints: {
-      991.8: {
-        spaceBetween: 30,
-      },
-    },
-  });
-}
-if (document.querySelector(".section-23__swiper")) {
-  new Swiper(".section-23__swiper", {
-    spaceBetween: 15,
     slidesPerView: 1,
-    pagination: {
-      el: ".section-23__swiper .swiper-pagination",
-      clickable: true,
-    },
+    initialSlide: 1,
     breakpoints: {
-      468: {
-        slidesPerView: 2,
-        spaceBetween: 15,
+      991.98: {
+        spaceBetween: 70,
       },
-      991.8: {
-        slidesPerView: 3,
-        spaceBetween: 15,
-      },
-      1230: {
-        slidesPerView: 3,
+      767.98: {
         spaceBetween: 30,
       },
     },

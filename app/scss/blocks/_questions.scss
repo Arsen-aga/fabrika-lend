@@ -1,0 +1,47 @@
+.questions {
+  padding-top: var(--indent);
+
+  &__accordion {
+    gap: 10px;
+  }
+
+  &__accordion-header {
+    background-color: var(--light-color);
+    border-radius: 12px;
+    padding: 20px 30px 20px;
+
+    @include lg {
+      padding: 15px 20px;
+    }
+  }
+
+  &__accordion-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(28/20*100%);
+
+    @include lg {
+      font-size: 18px;
+    }
+  }
+
+  .open-item {
+    svg path {
+      stroke: var(--default-color);
+    }
+  }
+
+  .accordion-item.active {
+    .accordion-body {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: calc(26/18*100%);
+      padding: 20px 30px 10px;
+
+      @include lg {
+        padding: 15px 20px;
+      }
+    }
+  }
+
+}

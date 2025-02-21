@@ -1,0 +1,77 @@
+.callback-block {
+  background-image: url(../images/callback-block-bg.webp); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: var(--indent);
+  padding: var(--indent) 0;
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include xl {
+      gap: 30px;
+    }
+
+    @include lg {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__managers {
+    position: absolute;
+    bottom: -100px;
+    right: -45px;
+
+    @include xl {
+      right: -150px;
+      max-width: 700px;
+    }
+
+    @include lg {
+      position: static;
+      margin-inline: auto;
+    }
+  }
+
+  &__title {
+    @include lg {
+      text-align: center;
+    }
+  }
+
+
+  &__form {
+    position: relative;
+    z-index: 1;
+    max-width: 510px;
+    padding: 50px;
+    padding-bottom: 38px;
+
+    @include xl {
+      padding: 40px;
+
+      .form__title {
+        br {
+          display: none;
+        }
+      }
+    }
+
+    .form__tz {
+      max-width: 410px;
+
+      label{
+        max-width: 410px;
+      }
+    }
+  }
+
+  .checkbox-block {
+    margin-top: 15px;
+  }
+}

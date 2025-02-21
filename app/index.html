@@ -291,6 +291,69 @@
     <h2 class="service-standard__title _title">
       Высший стандарт <span>обслуживания</span>
     </h2>
+    <div class="cursor">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" height="42" width="42">
+        <rect class="tooltip-horizontal-scroll-icon_card" x="480" width="200" height="200" rx="5"
+          fill="rgba(190,190,190,0.3)"></rect>
+        <rect class="tooltip-horizontal-scroll-icon_card" y="0" width="200" height="200" rx="5"
+          fill="rgba(190,190,190,0.3)"></rect>
+        <rect class="tooltip-horizontal-scroll-icon_card" x="240" width="200" height="200" rx="5"
+          fill="rgba(190,190,190,0.3)"></rect>
+        <path class="tooltip-horizontal-scroll-icon_hand"
+          d="M78.9579 285.7C78.9579 285.7 37.8579 212.5 20.5579 180.8C-2.44209 138.6 -6.2422 120.8 9.6579 112C19.5579 106.5 33.2579 108.8 41.6579 123.4L61.2579 154.6V32.3C61.2579 32.3 60.0579 0 83.0579 0C107.558 0 105.458 32.3 105.458 32.3V91.7C105.458 91.7 118.358 82.4 133.458 86.6C141.158 88.7 150.158 92.4 154.958 104.6C154.958 104.6 185.658 89.7 200.958 121.4C200.958 121.4 236.358 114.4 236.358 151.1C236.358 187.8 192.158 285.7 192.158 285.7H78.9579Z"
+          fill="rgba(190,190,190,1)"></path>
+        <style>
+          .tooltip-horizontal-scroll-icon_hand {
+            animation: tooltip-horizontal-scroll-icon_anim-scroll-hand 2s infinite
+          }
+    
+          .tooltip-horizontal-scroll-icon_card {
+            animation: tooltip-horizontal-scroll-icon_anim-scroll-card 2s infinite
+          }
+    
+          @keyframes tooltip-horizontal-scroll-icon_anim-scroll-hand {
+            0% {
+              transform: translateX(80px) scale(1);
+              opacity: 0
+            }
+    
+            10% {
+              transform: translateX(80px) scale(1);
+              opacity: 1
+            }
+    
+            20%,
+            60% {
+              transform: translateX(175px) scale(.6);
+              opacity: 1
+            }
+    
+            80% {
+              transform: translateX(5px) scale(.6);
+              opacity: 1
+            }
+    
+            to {
+              transform: translateX(5px) scale(.6);
+              opacity: 0
+            }
+          }
+    
+          @keyframes tooltip-horizontal-scroll-icon_anim-scroll-card {
+    
+            0%,
+            60% {
+              transform: translateX(0)
+            }
+    
+            80%,
+            to {
+              transform: translateX(-240px)
+            }
+          }
+        </style>
+      </svg>
+    </div>
     <div class="service-standard__items">
       <div class="service-standard__item">
         <div class="service-standard__item-icon">
@@ -408,7 +471,1693 @@
     </div>
   </div>
 </section>
- 
+  <section class="warranty-service _section">
+  <div class="container swiper-container">
+    <div class="warranty-service__header">
+      <div class="warranty-service__header-text">
+        <h2 class="warranty-service__title _title-light">
+          Гарантийное <span>обслуживание</span>
+        </h2>
+        <h3 class="warranty-service__subtitle">
+          Ваша уверенность в надежности шатра — наш приоритет. <br>Мы предлагаем комплексное гарантийное сопровождение,
+          позволяя <br>вам
+          забыть о технических нюансах и сосредоточиться на главном</h3>
+      </div>
+      <div class="main-slider__navigation">
+        <button type="button"
+          class="swiper-button-prev  _slider-button _slider-button_prev main-slider__button main-slider__button_prev  _icon-arrow _icon-white">
+        </button>
+        <div class="swiper-pagination main-slider__pagination"></div>
+        <button type="button"
+          class="swiper-button-next _slider-button _slider-button_next main-slider__button main-slider__button_next _icon-arrow _icon-white">
+        </button>
+      </div>
+    </div>
+    <div class="swiper warranty-service__slider main-slider">
+      <div class="swiper-wrapper main-slider__wrapper">
+        <div class="swiper-slide main-slider__slide">
+          <div class="main-slider__slide-inner">
+            <div class="main-slider__slide-pic">
+              <img src="images/warranty-service-1.webp" alt="warranty-service-1">
+            </div>
+            <div class="main-slider__slide-content">
+              <p class="main-slider__main-text">
+                Диагностика состояния<br> конструкции
+              </p>
+              <p class="main-slider__text">
+                выявление и устранение<br> возможных проблем.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide main-slider__slide">
+          <div class="main-slider__slide-inner">
+            <div class="main-slider__slide-pic">
+              <img src="images/warranty-service-2.webp" alt="warranty-service-2">
+            </div>
+            <div class="main-slider__slide-content">
+              <p class="main-slider__main-text">
+                Ремонт и замена поврежденных узлов
+              </p>
+              <p class="main-slider__text">
+                восстановление несущих элементов и механизмов.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide main-slider__slide">
+          <div class="main-slider__slide-inner">
+            <div class="main-slider__slide-pic">
+              <img src="images/warranty-service-3.webp" alt="warranty-service-3">
+            </div>
+            <div class="main-slider__slide-content">
+              <p class="main-slider__main-text">
+                Восстановление защитных покрытий
+              </p>
+              <p class="main-slider__text">
+                антикоррозийная обработка каркаса и обновление защитных слоев.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide main-slider__slide">
+          <div class="main-slider__slide-inner">
+            <div class="main-slider__slide-pic">
+              <img src="images/warranty-service-4.webp" alt="warranty-service-4">
+            </div>
+            <div class="main-slider__slide-content">
+              <p class="main-slider__main-text">
+                Ремонт и замена тентового покрытия
+              </p>
+              <p class="main-slider__text">
+                поддержание внешнего вида и
+                эксплуатационных характеристик.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide main-slider__slide">
+          <div class="main-slider__slide-inner">
+            <div class="main-slider__slide-pic">
+              <img src="images/warranty-service-5.webp" alt="warranty-service-5">
+            </div>
+            <div class="main-slider__slide-content">
+              <p class="main-slider__main-text">
+                Диагностика состояния конструкции
+              </p>
+              <p class="main-slider__text">
+                выявление и устранение возможных проблем.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide main-slider__slide">
+          <div class="main-slider__slide-inner">
+            <div class="main-slider__slide-pic">
+              <img src="images/warranty-service-6.webp" alt="warranty-service-6">
+            </div>
+            <div class="main-slider__slide-content">
+              <p class="main-slider__main-text">
+                Ремонт и замена поврежденных узлов
+              </p>
+              <p class="main-slider__text">
+                восстановление несущих элементов и механизмов.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide main-slider__slide">
+          <div class="main-slider__slide-inner">
+            <div class="main-slider__slide-pic">
+              <img src="images/warranty-service-7.webp" alt="warranty-service-7">
+            </div>
+            <div class="main-slider__slide-content">
+              <p class="main-slider__main-text">
+                Восстановление защитных покрытий
+              </p>
+              <p class="main-slider__text">
+                антикоррозийная обработка каркаса и обновление защитных слоев.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide main-slider__slide">
+          <div class="main-slider__slide-inner">
+            <div class="main-slider__slide-pic">
+              <img src="images/warranty-service-8.webp" alt="warranty-service-8">
+            </div>
+            <div class="main-slider__slide-content">
+              <p class="main-slider__main-text">
+                Ремонт и замена тентового покрытия
+              </p>
+              <p class="main-slider__text">
+                поддержание внешнего вида и
+                эксплуатационных характеристик.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide main-slider__slide">
+          <div class="main-slider__slide-inner">
+            <div class="main-slider__slide-pic">
+              <img src="images/warranty-service-9.webp" alt="warranty-service-9">
+            </div>
+            <div class="main-slider__slide-content">
+              <p class="main-slider__main-text">
+                Регулярная мойка тента специальным средством
+              </p>
+              <p class="main-slider__text">
+                предотвращение загрязнений и продление срока службы.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide main-slider__slide">
+          <div class="main-slider__slide-inner">
+            <div class="main-slider__slide-pic">
+              <img src="images/warranty-service-10.webp" alt="warranty-service-10">
+            </div>
+            <div class="main-slider__slide-content">
+              <p class="main-slider__main-text">
+                Аварийное обслуживание
+              </p>
+              <p class="main-slider__text">
+                выезд специалистов для устранения поломок в течение 72 часов.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <section class="service-maintenance">
+  <img class="service-maintenance__big-star" src="images/icons/big-star.svg" alt="big-star">
+  <div class="container">
+    <h2 class="service-maintenance__title _title">
+      Сервисное <span>обслуживание шатров</span>
+    </h2>
+    <p class="service-maintenance__subtitle _subtitle">
+      Профессиональный уход за шатрами – от диагностики до аварийного ремонта.
+    </p>
+    <div class="cursor">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" height="42" width="42">
+        <rect class="tooltip-horizontal-scroll-icon_card" x="480" width="200" height="200" rx="5"
+          fill="rgba(190,190,190,0.3)"></rect>
+        <rect class="tooltip-horizontal-scroll-icon_card" y="0" width="200" height="200" rx="5"
+          fill="rgba(190,190,190,0.3)"></rect>
+        <rect class="tooltip-horizontal-scroll-icon_card" x="240" width="200" height="200" rx="5"
+          fill="rgba(190,190,190,0.3)"></rect>
+        <path class="tooltip-horizontal-scroll-icon_hand"
+          d="M78.9579 285.7C78.9579 285.7 37.8579 212.5 20.5579 180.8C-2.44209 138.6 -6.2422 120.8 9.6579 112C19.5579 106.5 33.2579 108.8 41.6579 123.4L61.2579 154.6V32.3C61.2579 32.3 60.0579 0 83.0579 0C107.558 0 105.458 32.3 105.458 32.3V91.7C105.458 91.7 118.358 82.4 133.458 86.6C141.158 88.7 150.158 92.4 154.958 104.6C154.958 104.6 185.658 89.7 200.958 121.4C200.958 121.4 236.358 114.4 236.358 151.1C236.358 187.8 192.158 285.7 192.158 285.7H78.9579Z"
+          fill="rgba(190,190,190,1)"></path>
+        <style>
+          .tooltip-horizontal-scroll-icon_hand {
+            animation: tooltip-horizontal-scroll-icon_anim-scroll-hand 2s infinite
+          }
+    
+          .tooltip-horizontal-scroll-icon_card {
+            animation: tooltip-horizontal-scroll-icon_anim-scroll-card 2s infinite
+          }
+    
+          @keyframes tooltip-horizontal-scroll-icon_anim-scroll-hand {
+            0% {
+              transform: translateX(80px) scale(1);
+              opacity: 0
+            }
+    
+            10% {
+              transform: translateX(80px) scale(1);
+              opacity: 1
+            }
+    
+            20%,
+            60% {
+              transform: translateX(175px) scale(.6);
+              opacity: 1
+            }
+    
+            80% {
+              transform: translateX(5px) scale(.6);
+              opacity: 1
+            }
+    
+            to {
+              transform: translateX(5px) scale(.6);
+              opacity: 0
+            }
+          }
+    
+          @keyframes tooltip-horizontal-scroll-icon_anim-scroll-card {
+    
+            0%,
+            60% {
+              transform: translateX(0)
+            }
+    
+            80%,
+            to {
+              transform: translateX(-240px)
+            }
+          }
+        </style>
+      </svg>
+    </div>
+    <div class="service-maintenance__items">
+      <div class="service-maintenance__item">
+        <div class="service-maintenance__item-wrapper">
+          <img class="service-maintenance__item-img _img" src="images/service-maintenance-1.webp"
+            alt="service-maintenance-1">
+        </div>
+        <div class="service-maintenance__item-info">
+          <h4 class="service-maintenance__item-title">
+            Диагностика состояния шатра
+          </h4>
+        </div>
+      </div>
+      <div class="service-maintenance__item">
+        <div class="service-maintenance__item-wrapper">
+          <img class="service-maintenance__item-img _img" src="images/service-maintenance-2.webp"
+            alt="service-maintenance-2">
+        </div>
+        <div class="service-maintenance__item-info">
+          <h4 class="service-maintenance__item-title">
+            Плановое техобслуживание
+          </h4>
+          <p class="service-maintenance__item-text">
+            (проверка каркаса, мелкий ремонт)
+          </p>
+        </div>
+      </div>
+      <div class="service-maintenance__item">
+        <div class="service-maintenance__item-wrapper">
+          <img class="service-maintenance__item-img _img" src="images/service-maintenance-3.webp"
+            alt="service-maintenance-3">
+        </div>
+        <div class="service-maintenance__item-info">
+          <h4 class="service-maintenance__item-title">
+            Срочный ремонт
+          </h4>
+          <p class="service-maintenance__item-text">
+            (24 часа отклик)
+          </p>
+        </div>
+      </div>
+      <div class="service-maintenance__item">
+        <div class="service-maintenance__item-wrapper">
+          <img class="service-maintenance__item-img _img" src="images/service-maintenance-4.webp"
+            alt="service-maintenance-4">
+        </div>
+        <div class="service-maintenance__item-info">
+          <h4 class="service-maintenance__item-title">
+            Обновление и модернизация
+          </h4>
+        </div>
+      </div>
+    </div>
+    <a class="service-maintenance__btn _main-btn" href="#callback" data-fancybox>
+      Оставить заявку
+    </a>
+  </div>
+</section>
+  <section class="post-warranty">
+  <div class="container">
+    <h2 class="post-warranty__title _title">
+      Постгарантийное <br><span>обслуживание шатров</span>
+    </h2>
+    <p class="post-warranty__subtitle _subtitle">
+      Время оставляет свой след на любой конструкции. Наш сервис поддерживает<br>
+      шатры в безупречном состоянии, предотвращая износ и продлевая их срок службы.
+    </p>
+    <div class="post-warranty__items">
+      <div class="post-warranty__item">
+        <img class="post-warranty__item-img _img" src="images/post-warranty-1.webp" alt="post-warranty-1">
+        <div class="overlay"></div>
+        <div class="post-warranty__item-inner">
+          <h4 class="post-warranty__item-title">
+            Диагностика<br> и оценка
+          </h4>
+          <p class="post-warranty__item-text">
+            детальный осмотр<br>
+            шатра, выявление<br> потенциальных проблем
+          </p>
+        </div>
+      </div>
+      <div class="post-warranty__item">
+        <img class="post-warranty__item-img _img" src="images/post-warranty-2.webp" alt="post-warranty-2">
+        <div class="overlay"></div>
+        <div class="post-warranty__item-inner">
+          <h4 class="post-warranty__item-title">
+            Разработка плана<br> обслуживания
+          </h4>
+          <p class="post-warranty__item-text">
+            персонализированный<br> график технических работ
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="cursor">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" height="42" width="42">
+        <rect class="tooltip-horizontal-scroll-icon_card" x="480" width="200" height="200" rx="5"
+          fill="rgba(190,190,190,0.3)"></rect>
+        <rect class="tooltip-horizontal-scroll-icon_card" y="0" width="200" height="200" rx="5"
+          fill="rgba(190,190,190,0.3)"></rect>
+        <rect class="tooltip-horizontal-scroll-icon_card" x="240" width="200" height="200" rx="5"
+          fill="rgba(190,190,190,0.3)"></rect>
+        <path class="tooltip-horizontal-scroll-icon_hand"
+          d="M78.9579 285.7C78.9579 285.7 37.8579 212.5 20.5579 180.8C-2.44209 138.6 -6.2422 120.8 9.6579 112C19.5579 106.5 33.2579 108.8 41.6579 123.4L61.2579 154.6V32.3C61.2579 32.3 60.0579 0 83.0579 0C107.558 0 105.458 32.3 105.458 32.3V91.7C105.458 91.7 118.358 82.4 133.458 86.6C141.158 88.7 150.158 92.4 154.958 104.6C154.958 104.6 185.658 89.7 200.958 121.4C200.958 121.4 236.358 114.4 236.358 151.1C236.358 187.8 192.158 285.7 192.158 285.7H78.9579Z"
+          fill="rgba(190,190,190,1)"></path>
+        <style>
+          .tooltip-horizontal-scroll-icon_hand {
+            animation: tooltip-horizontal-scroll-icon_anim-scroll-hand 2s infinite
+          }
+    
+          .tooltip-horizontal-scroll-icon_card {
+            animation: tooltip-horizontal-scroll-icon_anim-scroll-card 2s infinite
+          }
+    
+          @keyframes tooltip-horizontal-scroll-icon_anim-scroll-hand {
+            0% {
+              transform: translateX(80px) scale(1);
+              opacity: 0
+            }
+    
+            10% {
+              transform: translateX(80px) scale(1);
+              opacity: 1
+            }
+    
+            20%,
+            60% {
+              transform: translateX(175px) scale(.6);
+              opacity: 1
+            }
+    
+            80% {
+              transform: translateX(5px) scale(.6);
+              opacity: 1
+            }
+    
+            to {
+              transform: translateX(5px) scale(.6);
+              opacity: 0
+            }
+          }
+    
+          @keyframes tooltip-horizontal-scroll-icon_anim-scroll-card {
+    
+            0%,
+            60% {
+              transform: translateX(0)
+            }
+    
+            80%,
+            to {
+              transform: translateX(-240px)
+            }
+          }
+        </style>
+      </svg>
+    </div>
+    <div class="post-warranty__elems">
+      <div class="post-warranty__elem">
+        <img class="post-warranty__elem-img _img" src="images/post-warranty-3.webp" alt="post-warranty-3">
+        <div class="overlay"></div>
+        <div class="post-warranty__elem-inner">
+          <h4 class="post-warranty__elem-title">
+            Профилактический <br>осмотр
+          </h4>
+          <p class="post-warranty__elem-text">
+            каждые 6-12 месяцев для <br>предотвращения серьезных<br>
+            неисправностей
+          </p>
+        </div>
+      </div>
+      <div class="post-warranty__elem">
+        <img class="post-warranty__elem-img _img" src="images/post-warranty-4.webp" alt="post-warranty-4">
+        <div class="overlay"></div>
+        <div class="post-warranty__elem-inner">
+          <h4 class="post-warranty__elem-title">
+            Аварийное устранение<br> неисправностей
+          </h4>
+          <p class="post-warranty__elem-text">
+            наши специалисты готовы <br>оперативно выехать на объект<br> в течение 72 часов
+          </p>
+        </div>
+      </div>
+      <div class="post-warranty__elem">
+        <img class="post-warranty__elem-img _img" src="images/post-warranty-5.webp" alt="post-warranty-5">
+        <div class="overlay"></div>
+        <div class="post-warranty__elem-inner">
+          <h4 class="post-warranty__elem-title">
+            Модернизация
+          </h4>
+          <p class="post-warranty__elem-text">
+            дооснащение шатра<br>
+            дополнительными модулями,<br> секциями и комплектацией
+          </p>
+        </div>
+      </div>
+    </div>
+    <a class="post-warranty__btn _main-btn" href="#callback" data-fancybox>
+      Оставить заявку
+    </a>
+  </div>
+</section>
+  <div class="white-block _section-middle">
+   <section class="washing">
+  <div class="container">
+    <h2 class="washing__title _title">
+      Профессиональная<br> <span>мойка шатров</span>
+    </h2>
+    <div class="washing__items">
+      <div class="washing__item">
+        <div class="washing__item-wrapper">
+          <img class="washing__item-img _img" src="images/washing-1.webp" alt="washing-1">
+        </div>
+        <div class="washing__item-info">
+          <h4 class="washing__item-title">
+            Глубокая чистка шатров продлевает их срок<br>
+            службы и сохраняет эстетичный вид
+          </h4>
+          <p class="washing__item-text">
+
+          </p>
+        </div>
+      </div>
+      <div class="washing__item">
+        <div class="washing__item-wrapper">
+          <img class="washing__item-img _img" src="images/washing-2.webp" alt="washing-2">
+        </div>
+        <div class="washing__item-info">
+          <h4 class="washing__item-title">
+            Мы предлагаем мойку шатров с использованием <br>запатентованного средства
+          </h4>
+          <p class="washing__item-text">
+            которое эффективно удаляет загрязнения<br>
+            и восстанавливает защитные свойства тента
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+   <section class="washing-process">
+  <div class="container">
+    <h2 class="washing-process__title _title">
+      Процесс <span>мойки включает</span>
+    </h2>
+    <div class="washing-process__items">
+      <div class="washing-process__item">
+        <div class="washing-process__item-wrapper">
+          <img class="washing-process__item-img _img" src="images/washing-process-1.webp" alt="washing-process-1">
+        </div>
+        <div class="washing-process__item-info">
+          <h4 class="washing-process__item-title">
+            Механическую очистку специальным оборудованием под давлением
+          </h4>
+        </div>
+      </div>
+      <div class="washing-process__item">
+        <div class="washing-process__item-wrapper">
+          <img class="washing-process__item-img _img" src="images/washing-process-2.webp" alt="washing-process-2">
+        </div>
+        <div class="washing-process__item-info">
+          <h4 class="washing-process__item-title">
+            Применение фирменного моющего средства, разработанного специально для ПВХ материалов
+          </h4>
+        </div>
+      </div>
+      <div class="washing-process__item">
+        <div class="washing-process__item-wrapper">
+          <img class="washing-process__item-img _img" src="images/washing-process-3.webp" alt="washing-process-3">
+        </div>
+        <div class="washing-process__item-info">
+          <h4 class="washing-process__item-title">
+            Полную сушку тента для предотвращения образования плесени и влаги
+          </h4>
+        </div>
+      </div>
+      <div class="washing-process__item">
+        <div class="washing-process__item-wrapper">
+          <img class="washing-process__item-img _img" src="images/washing-process-4.webp" alt="washing-process-4">
+        </div>
+        <div class="washing-process__item-info">
+          <h4 class="washing-process__item-title">
+            При необходимости — нанесение защитного состава
+          </h4>
+          <p class="washing-process__item-text">
+            Полную сушку тента для предотвращения образования плесени и влаги
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+   <section class="washing-agent">
+  <div class="container">
+    <h2 class="washing-agent__title _title">
+      Специализированное <br><span>моющее средство</span>
+    </h2>
+    <p class="washing-agent__subtitle _subtitle">
+      чистота, защита и долговечность вашего тента – без лишних усилий!
+    </p>
+    <div class="cursor">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" height="42" width="42">
+        <rect class="tooltip-horizontal-scroll-icon_card" x="480" width="200" height="200" rx="5"
+          fill="rgba(190,190,190,0.3)"></rect>
+        <rect class="tooltip-horizontal-scroll-icon_card" y="0" width="200" height="200" rx="5"
+          fill="rgba(190,190,190,0.3)"></rect>
+        <rect class="tooltip-horizontal-scroll-icon_card" x="240" width="200" height="200" rx="5"
+          fill="rgba(190,190,190,0.3)"></rect>
+        <path class="tooltip-horizontal-scroll-icon_hand"
+          d="M78.9579 285.7C78.9579 285.7 37.8579 212.5 20.5579 180.8C-2.44209 138.6 -6.2422 120.8 9.6579 112C19.5579 106.5 33.2579 108.8 41.6579 123.4L61.2579 154.6V32.3C61.2579 32.3 60.0579 0 83.0579 0C107.558 0 105.458 32.3 105.458 32.3V91.7C105.458 91.7 118.358 82.4 133.458 86.6C141.158 88.7 150.158 92.4 154.958 104.6C154.958 104.6 185.658 89.7 200.958 121.4C200.958 121.4 236.358 114.4 236.358 151.1C236.358 187.8 192.158 285.7 192.158 285.7H78.9579Z"
+          fill="rgba(190,190,190,1)"></path>
+        <style>
+          .tooltip-horizontal-scroll-icon_hand {
+            animation: tooltip-horizontal-scroll-icon_anim-scroll-hand 2s infinite
+          }
+    
+          .tooltip-horizontal-scroll-icon_card {
+            animation: tooltip-horizontal-scroll-icon_anim-scroll-card 2s infinite
+          }
+    
+          @keyframes tooltip-horizontal-scroll-icon_anim-scroll-hand {
+            0% {
+              transform: translateX(80px) scale(1);
+              opacity: 0
+            }
+    
+            10% {
+              transform: translateX(80px) scale(1);
+              opacity: 1
+            }
+    
+            20%,
+            60% {
+              transform: translateX(175px) scale(.6);
+              opacity: 1
+            }
+    
+            80% {
+              transform: translateX(5px) scale(.6);
+              opacity: 1
+            }
+    
+            to {
+              transform: translateX(5px) scale(.6);
+              opacity: 0
+            }
+          }
+    
+          @keyframes tooltip-horizontal-scroll-icon_anim-scroll-card {
+    
+            0%,
+            60% {
+              transform: translateX(0)
+            }
+    
+            80%,
+            to {
+              transform: translateX(-240px)
+            }
+          }
+        </style>
+      </svg>
+    </div>
+    <div class="washing-agent__items">
+      <div class="washing-agent__item">
+        <img class="washing-agent__item-img _img" src="images/washing-agent-1.webp" alt="washing-agent-1">
+        <div class="overlay"></div>
+        <div class="washing-agent__item-inner">
+          <h4 class="washing-agent__item-title">
+            Экологичность и <br>антисептические свойства
+          </h4>
+          <ul class="washing-agent__item-list list-point">
+            <li class="washing-agent__item-point">
+              Состоит из биоразлагаемых <br>компонентов
+            </li>
+            <li class="washing-agent__item-point">
+              Не содержит агрессивных <br>химических веществ
+            </li>
+            <li class="washing-agent__item-point">
+              Предотвращает развитие<br> плесени и грибка
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="washing-agent__item">
+        <img class="washing-agent__item-img _img" src="images/washing-agent-2.webp" alt="washing-agent-2">
+        <div class="overlay"></div>
+        <div class="washing-agent__item-inner">
+          <h4 class="washing-agent__item-title">
+            Глубокая и <br>эффективная очистка
+          </h4>
+          <ul class="washing-agent__item-list list-point">
+            <li class="washing-agent__item-point">
+              Удаляет стойкую грязь, плесень,<br> грибок и атмосферные осадки
+            </li>
+            <li class="washing-agent__item-point">
+              Сохраняет эксплуатационные<br>
+              характеристики материалов
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="washing-agent__item">
+        <img class="washing-agent__item-img _img" src="images/washing-agent-3.webp" alt="washing-agent-3">
+        <div class="overlay"></div>
+        <div class="washing-agent__item-inner">
+          <h4 class="washing-agent__item-title">
+            Безопасность <br>и долговечность
+          </h4>
+          <ul class="washing-agent__item-list list-point">
+            <li class="washing-agent__item-point">
+              Снижает риск повреждения <br>тканей и покрытий
+            </li>
+            <li class="washing-agent__item-point">
+              Улучшает срок службы<br> шатров и тентов
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+   <section class="personalized-service _section">
+  <div class="container">
+
+    <form action="#" method="POST" action="#" enctype="multipart/form-data"
+      class="personalized-service__form form  form_black form-submit">
+      <div class="form__content">
+        <input type="hidden" name="from" value="Получите бесплатный расчет стоимости входных групп уже сегодня">
+        <h2 class="form__title ">
+          Рассчитать индивидуальную <br>стоимость услуг
+        </h2>
+        <div class="form__inner">
+          <div class="form__items form__items_horizontal">
+            <input type="tel" class="form__input form-control" name="phone" placeholder="Введите ваш телефон"
+              required="">
+            <input type="text" class="form__input form-control" name="name" placeholder="Введите ваше имя"
+              required="">
+
+            <button class="form__button _main-btn" type="submit">Рассчитать стоимость</button>
+          </div>
+          <div class="form__footer " style="justify-content: left;">
+            <p class="form__callback _icon-phone _icon-orange">
+              <span>Или звоните: <a href="tel:+78001001010">+7 800 100 10 10</a></span>
+            </p>
+            <label class="checkbox-block">
+              <input type="checkbox" name="access" required checked>
+              <span>
+                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 7.32575L6.74991 11.0728L15 2.82275" stroke="white" stroke-width="4.22287" stroke-linecap="round"/>
+</svg>
+
+              </span>
+              <p>
+                Я принимаю условия <a data-fancybox="" class="_link" href="#politics" data-fancybox="">политики
+                  конфиденциальности</a>
+              </p>
+            </label>
+          </div>
+
+        </div>
+      </div>
+      <div class="form__docs">
+        <img src="images/personalized-service-1.webp" alt="">
+      </div>
+    </form>
+  </div>
+</section>
+  </div>
+  <section class="dismantling">
+  <div class="container">
+    <h2 class="dismantling__title _title">
+      Демонтаж <span>шатров</span>
+    </h2>
+    <p class="dismantling__subtitle _subtitle">
+      Бережный разбор шатров с маркировкой,<br> упаковкой и подготовкой к хранению
+    </p>
+    <div class="dismantling__items">
+      <div class="dismantling__item">
+        <div class="dismantling__item-wrapper">
+          <img class="dismantling__item-img _img" src="images/dismantling-1.webp" alt="dismantling-1">
+        </div>
+        <div class="dismantling__item-info">
+          <h4 class="dismantling__item-title">
+            Освобождение шатра от креплений
+          </h4>
+        </div>
+      </div>
+      <div class="dismantling__item">
+        <div class="dismantling__item-wrapper">
+          <img class="dismantling__item-img _img" src="images/dismantling-2.webp" alt="dismantling-2">
+        </div>
+        <div class="dismantling__item-info">
+          <h4 class="dismantling__item-title">
+            Разборка каркаса
+          </h4>
+        </div>
+      </div>
+      <div class="dismantling__item">
+        <div class="dismantling__item-wrapper">
+          <img class="dismantling__item-img _img" src="images/dismantling-3.webp" alt="dismantling-3">
+        </div>
+        <div class="dismantling__item-info">
+          <h4 class="dismantling__item-title">
+            Очистка тента
+          </h4>
+        </div>
+      </div>
+      <div class="dismantling__item">
+        <div class="dismantling__item-wrapper">
+          <img class="dismantling__item-img _img" src="images/dismantling-4.webp" alt="dismantling-4">
+        </div>
+        <div class="dismantling__item-info">
+          <h4 class="dismantling__item-title">
+            Упаковка и маркировка
+          </h4>
+        </div>
+      </div>
+    </div>
+    <a class="dismantling__btn _main-btn" href="#callback" data-fancybox>
+      Оставить заявку
+    </a>
+  </div>
+</section>
+  <div class="dark-block _section">
+    <section class="tent-storage">
+  <div class="container">
+    <h2 class="tent-storage__title _title-light">
+      Зимнее хранение <span>шатров и тентов</span>
+    </h2>
+    <div class="tent-storage__inner">
+      <div class="tent-storage__left">
+        <div class="tent-storage__left-wrapper">
+          <img class="tent-storage__img _img" src="images/tent-storage-1.webp" alt="tent-storage-1">
+        </div>
+      </div>
+      <div class="tent-storage__right">
+        <div class="tent-storage__icons">
+          <div class="tent-storage__icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2743_953)">
+<path d="M38.75 39.9393H38.125C37.4367 39.6956 36.9531 39.2698 36.8812 38.5011C36.7711 37.3198 36.2297 36.8198 35.0367 36.8198C25.0117 36.8198 14.9875 36.8198 4.9625 36.8198C4.84531 36.8198 4.72813 36.8159 4.61094 36.8222C3.83672 36.8636 3.16875 37.4581 3.14141 38.2284C3.11016 39.1143 2.68672 39.6565 1.87422 39.9386H1.24922C0.61875 39.7378 0.200781 39.3229 0 38.6917C0 38.4057 0 38.1198 0 37.8339C0.0257813 37.7362 0.0570313 37.6393 0.0773437 37.5401C0.375781 36.062 1.19219 34.9651 2.51406 34.2417C2.71563 34.1315 2.92813 34.0417 3.17031 33.9268C2.66953 32.7854 2.82031 31.5932 2.81641 30.4198C2.80547 26.4729 2.8125 22.5261 2.8125 18.5792V18.094C1.64219 18.1331 0.455469 18.2862 0 16.8565V16.2323C0.314844 15.2964 0.978906 14.9089 1.94844 14.9815C2.22813 15.0026 2.51016 14.9847 2.8125 14.9847V14.469C2.8125 10.2729 2.8125 6.07606 2.8125 1.87997C2.8125 1.737 2.80313 1.59247 2.81875 1.45184C2.89141 0.799497 3.23125 0.332309 3.85 0.108872C4.47187 -0.115347 5.03438 0.0323093 5.49922 0.494809C5.84062 0.835434 5.94141 1.26747 5.94063 1.74325C5.93516 6.00496 5.9375 10.2659 5.9375 14.5276C5.9375 14.6761 5.9375 14.8253 5.9375 14.9659H34.0625V14.5284C34.0625 12.2675 34.0625 10.0073 34.0625 7.74637C34.0625 5.70653 34.0602 3.66668 34.0641 1.62684C34.0656 0.897934 34.4742 0.316684 35.1172 0.0987156C36.175 -0.260659 37.1852 0.508091 37.1859 1.68543C37.1891 5.95965 37.1875 10.2339 37.1875 14.5089C37.1875 14.6597 37.1875 14.8104 37.1875 14.9964C38.3563 14.9581 39.5445 14.8034 40 16.2339V16.8581C39.6836 17.7909 39.0211 18.1807 38.0523 18.1089C37.7727 18.0878 37.4906 18.1057 37.1875 18.1057V18.6198C37.1875 23.0597 37.1984 27.4995 37.175 31.9393C37.1719 32.5378 36.9961 33.1354 36.9008 33.7339C36.8891 33.8065 36.8805 33.88 36.8703 33.9581C36.9578 33.9979 37.0273 34.0307 37.0977 34.0612C38.5805 34.7089 39.5086 35.8206 39.8922 37.3878C39.9289 37.537 39.9641 37.687 40 37.8362V38.694C39.7984 39.3245 39.3812 39.7401 38.75 39.9417V39.9393ZM21.7672 33.6839C21.6969 33.1932 21.5789 32.7339 21.5742 32.2729C21.5539 30.0901 21.5406 27.9065 21.5711 25.7237C21.6039 23.3815 23.5906 21.2831 25.9375 21.2518C28.6352 21.2159 31.3422 21.0682 34.0422 21.3807V18.1284H5.95937V21.4229C6.46484 21.3557 6.95156 21.2393 7.43906 21.2346C9.57422 21.2143 11.7094 21.212 13.8445 21.23C16.0891 21.2487 18.0242 22.9432 18.3711 25.1604C18.3969 25.3268 18.4336 25.4956 18.4305 25.6628C18.3758 28.3315 18.593 31.0073 18.2836 33.6847H21.7672V33.6839ZM9.0625 24.3432C8.50625 24.3432 8 24.3347 7.49531 24.3448C6.61094 24.3628 5.94531 25.0237 5.94141 25.912C5.93203 27.9893 5.93125 30.0675 5.94141 32.1448C5.94609 33.0268 6.62031 33.6925 7.50938 33.6972C9.59062 33.7065 11.6727 33.7073 13.7539 33.6972C14.6227 33.6925 15.3008 33.0307 15.307 32.1706C15.3203 30.0675 15.318 27.9636 15.307 25.8596C15.3039 25.1925 14.8727 24.5597 14.2344 24.4432C13.5719 24.3222 12.8813 24.3503 12.1875 24.312C12.1875 24.887 12.1922 25.3667 12.1867 25.8472C12.1758 26.7698 11.5148 27.4557 10.6375 27.462C9.74531 27.4682 9.07266 26.7745 9.06406 25.8323C9.05937 25.3534 9.06406 24.8745 9.06406 24.344L9.0625 24.3432ZM30.9375 24.3526C30.9375 24.8682 30.9406 25.3347 30.9375 25.8011C30.9305 26.7581 30.2844 27.4511 29.3937 27.4604C28.4867 27.4698 27.8203 26.7698 27.8141 25.7979C27.8109 25.3221 27.8141 24.8464 27.8141 24.3526C27.1977 24.3526 26.625 24.3151 26.0586 24.362C25.2898 24.4253 24.6984 25.0862 24.6945 25.8675C24.6828 27.9714 24.6812 30.0745 24.6945 32.1784C24.7 33.005 25.3555 33.6854 26.1766 33.6925C28.3102 33.7112 30.4438 33.7112 32.5766 33.6925C33.3813 33.6854 34.0477 33.019 34.0547 32.2151C34.0734 30.0854 34.0719 27.9557 34.0547 25.8268C34.0484 25.0682 33.4445 24.4229 32.6906 24.3628C32.125 24.3175 31.5523 24.3542 30.9383 24.3542L30.9375 24.3526Z" fill="white"/>
+<path d="M21.5617 3.13204C21.5617 3.64688 21.5641 4.1125 21.5617 4.57813C21.5555 5.55703 20.8969 6.25547 19.9883 6.25C19.0977 6.24453 18.4445 5.54922 18.4375 4.59532C18.4344 4.12813 18.4375 3.66094 18.4375 3.10469C17.7547 3.13829 17.075 3.10313 16.4242 3.22266C15.7242 3.35079 15.3148 4 15.3133 4.77032C15.3094 6.60235 15.3195 8.43516 15.3086 10.2672C15.3023 11.3852 14.2742 12.1289 13.2437 11.7805C12.6398 11.5766 12.1961 11.0164 12.193 10.3703C12.182 8.38203 12.1461 6.39219 12.2039 4.40547C12.2727 2.05 14.3445 0.0523478 16.7094 0.0210978C18.8961 -0.00780843 21.0844 -0.00624593 23.2711 0.0210978C25.7055 0.0507853 27.7687 2.11172 27.8039 4.54375C27.8312 6.45391 27.8164 8.36485 27.8086 10.275C27.8047 11.1891 27.1148 11.8727 26.2344 11.8656C25.3578 11.8586 24.6914 11.1695 24.6883 10.2469C24.6828 8.45313 24.6883 6.66016 24.6859 4.86641C24.6852 3.7586 24.0547 3.13516 22.9391 3.13282C22.4977 3.13282 22.057 3.13282 21.5617 3.13282V3.13204Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_2743_953">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+          </div>
+          <div class="tent-storage__icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2743_958)">
+<path d="M39.9986 11.4748C39.8216 12.2771 39.5947 13.0592 39.0691 13.7154C38.9155 13.9076 38.7588 14.1006 38.5857 14.2748C36.8422 16.024 35.0972 17.7709 33.3483 19.5139C32.822 20.0381 32.1397 20.1623 31.5261 19.8678C30.9506 19.592 30.5974 18.985 30.645 18.3428C30.6777 17.9061 30.8898 17.5631 31.1962 17.2584C32.8727 15.5896 34.5428 13.9146 36.2146 12.242C36.9779 11.4779 37.0668 10.9381 36.5842 9.97168C35.6212 8.04434 34.6473 6.12246 33.6999 4.1873C33.3374 3.44824 32.7869 3.12012 31.9651 3.12324C27.9627 3.1373 23.9604 3.13652 19.9573 3.12324C19.1362 3.12012 18.574 3.44434 18.2255 4.19121C17.8816 4.92715 17.5035 5.64746 17.1276 6.39902C21.4122 7.28887 24.5553 9.62637 26.39 13.5725C27.813 16.6326 27.8972 19.7967 26.7697 22.9779C24.4461 29.5334 16.5506 33.4201 9.44576 29.9068C8.8173 30.8084 8.18572 31.7123 7.55492 32.617C6.08358 34.7264 4.60599 36.8318 3.14634 38.9498C2.83367 39.4037 2.47968 39.7717 1.94556 39.9404H1.32178C0.691763 39.7389 0.274609 39.324 0.0742188 38.6928C0.0742188 38.485 0.0742188 38.2771 0.0742188 38.0686C0.266811 37.7326 0.436792 37.3811 0.655895 37.0639C2.52178 34.3748 4.39625 31.692 6.26837 29.0068C6.4672 28.7217 6.66291 28.4357 6.86174 28.1467C6.75258 28.0428 6.66915 27.9607 6.58338 27.8818C2.45395 24.1021 1.34829 17.9068 3.99235 12.9678C5.97753 9.25996 9.08786 7.06152 13.2524 6.39277C13.5674 6.34199 13.7428 6.22012 13.8816 5.92793C14.4134 4.81543 14.9584 3.70918 15.5315 2.61699C16.4204 0.930274 17.8325 0.0279297 19.7413 0.0177734C23.8988 -0.00566406 28.0571 -0.00644531 32.2153 0.0185547C34.0571 0.0294922 35.438 0.895117 36.3339 2.50762C36.6302 3.04043 36.9046 3.58652 37.1565 4.14121C38.0937 6.20059 39.374 8.10215 39.9986 10.3053V11.4748ZM5.69059 18.7303C5.69215 23.8818 9.89098 28.0834 15.0403 28.0857C20.192 28.0889 24.3955 23.8936 24.4033 18.7428C24.4111 13.574 20.2021 9.3623 15.0333 9.36855C9.88241 9.3748 5.68825 13.5764 5.69059 18.7295V18.7303Z" fill="white"/>
+<path d="M19.4955 20.0171C19.3162 19.9234 18.9045 19.8101 18.6355 19.5499C17.1423 18.1031 15.6772 16.6265 14.2168 15.1468C13.6063 14.5281 13.6211 13.5726 14.2106 12.9695C14.8203 12.346 15.7724 12.321 16.4125 12.9523C17.8924 14.4124 19.3622 15.8843 20.8226 17.364C21.3076 17.8546 21.4168 18.4523 21.1322 19.0882C20.8624 19.6929 20.3696 19.9835 19.4948 20.0171H19.4955Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_2743_958">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+          </div>
+        </div>
+        <h4 class="tent-storage__right-title">
+          Чтобы сохранить шатер в идеальном<br>
+          состоянии, ему необходимы особые<br> условия хранения
+        </h4>
+        <p class="tent-storage__right-text">
+          Наши склады оснащены системой климат-<br>контроля, исключающей риск образования<br> плесени, коррозии или выцветания
+          материала.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="how-we-work">
+  <div class="container swiper-container">
+    <div class="how-we-work__header">
+      <div class="how-we-work__header-text">
+        <h2 class="how-we-work__title _title-light">
+          Как мы <span>работаем</span>
+        </h2>
+      </div>
+      <div class="main-slider__navigation">
+        <button type="button"
+          class="swiper-button-prev  _slider-button _slider-button_prev main-slider__button main-slider__button_prev  _icon-arrow _icon-white">
+        </button>
+        <div class="swiper-pagination main-slider__pagination"></div>
+        <button type="button"
+          class="swiper-button-next _slider-button _slider-button_next main-slider__button main-slider__button_next _icon-arrow _icon-white">
+        </button>
+      </div>
+    </div>
+    <div class="swiper how-we-work__slider main-slider">
+      <div class="swiper-wrapper main-slider__wrapper">
+        <div class="swiper-slide main-slider__slide">
+          <a class="main-slider__slide-inner" href="#" data-fancybox>
+            <div class="main-slider__slide-pic">
+              <img src="images/how-we-work-1.webp" alt="how-we-work-1">
+            </div>
+            <div class="main-slider__slide-content">
+              <p class="main-slider__main-text">
+                Осмотр и диагностика
+              </p>
+              <p class="main-slider__text how-we-work__slider-text">
+                В случае выявления<br>
+                механических повреждений шатра, <br>по согласованию с заказчиком
+              </p>
+              <p class="main-slider__link _icon-arrows">
+                <span>Подробнее</span>
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide main-slider__slide">
+          <a class="main-slider__slide-inner" href="#" data-fancybox>
+            <div class="main-slider__slide-pic">
+              <img src="images/how-we-work-2.webp" alt="how-we-work-2">
+            </div>
+            <div class="main-slider__slide-content">
+              <p class="main-slider__main-text">
+              Очистка и сушка
+              </p>
+              <p class="main-slider__text how-we-work__slider-text">
+                Шатер проходит очистку <br>специальным оборудованием <br>под давлением с применением запатентованного моющего средства, которое
+                продлевает срок службы шатра, а также восстанавливает защитные свойства тента. После этого тент проходит термическую
+                обработку (сушку), что гарантирует полное удаление влаги перед упаковкой.
+              </p>
+              <p class="main-slider__link _icon-arrows">
+                <span>Подробнее</span>
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide main-slider__slide">
+          <a class="main-slider__slide-inner" href="#" data-fancybox>
+            <div class="main-slider__slide-pic">
+              <img src="images/how-we-work-3.webp" alt="how-we-work-3">
+            </div>
+            <div class="main-slider__slide-content">
+              <p class="main-slider__main-text">
+                Маркировка и упаковка
+              </p>
+              <p class="main-slider__text how-we-work__slider-text">
+              Методом вакуумной упаковки, <br>что исключает появление влаги<br> и грязи в период хранения
+              </p>
+              <p class="main-slider__link _icon-arrows">
+                <span>Подробнее</span>
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide main-slider__slide">
+          <a class="main-slider__slide-inner" href="#" data-fancybox>
+            <div class="main-slider__slide-pic">
+              <img src="images/how-we-work-4.webp" alt="how-we-work-4">
+            </div>
+            <div class="main-slider__slide-content">
+              <p class="main-slider__main-text">
+                Среда хранения
+              </p>
+              <p class="main-slider__text how-we-work__slider-text">
+                на нашем складе установлена <br>современная система<br>
+                климат-контроля, что позволяет
+              </p>
+              <p class="main-slider__link _icon-arrows">
+                <span>Подробнее</span>
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide main-slider__slide">
+          <a class="main-slider__slide-inner" href="#" data-fancybox>
+            <div class="main-slider__slide-pic">
+              <img src="images/how-we-work-5.webp" alt="how-we-work-5">
+            </div>
+            <div class="main-slider__slide-content">
+              <p class="main-slider__main-text">
+                Быстрая выдача
+              </p>
+              <p class="main-slider__text how-we-work__slider-text">
+                По предварительному запросу<br> мы можем осуществить доставку<br>
+                (или клиент может забрать шатер
+              </p>
+              <p class="main-slider__link _icon-arrows">
+                <span>Подробнее</span>
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <section class="average-cost">
+  <div class="container">
+    <form action="#" method="POST" action="#" enctype="multipart/form-data" class="average-cost__form form form-submit">
+      <div class="form__content">
+        <input type="hidden" name="from" value="Подготовим лучшее предложение">
+        <h2 class="form__title ">
+          Средняя стоимость: <br>от <span>15 000 до 50 000 ₽</span> за сезон
+        </h2>
+        <h3 class="form__subtitle">
+          заполнив форму ниже
+        </h3>
+        <div class="form__inner">
+          <div class="form__items form__items_horizontal">
+            <input type="tel" class="form__input form-control" name="phone" placeholder="Введите ваш телефон"
+              required="">
+
+            <div class="form__tz">
+              <input
+                accept="image/*, .doc, .docx, .xml, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document, application/pdf"
+                id="file" name="file" type="file">
+              <label class="_icon-svg-add _icon-tz _icon-orange" for="file">
+
+                  Прикрепить ТЗ при наличии</label>
+              <span id="file-name"></span>
+            </div>
+            <button class="form__button _main-btn" type="submit">Оставить заявку</button>
+          </div>
+          <div class="form__footer ">
+            <p class="form__callback _icon-phone _icon-orange _main-text">
+              <span>Или звоните <a href="tel:+78001001010">+7 800 100 10 10</a></span>
+            </p>
+            <label class="checkbox-block">
+              <input type="checkbox" name="access" required checked>
+              <span>
+                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 7.32575L6.74991 11.0728L15 2.82275" stroke="white" stroke-width="4.22287" stroke-linecap="round"/>
+</svg>
+
+              </span>
+              <p>
+                Я принимаю условия <a data-fancybox="" class="_link" href="#politics" data-fancybox="">политики
+                  конфиденциальности</a>
+              </p>
+            </label>
+          </div>
+
+        </div>
+      </div>
+      <div class="form__docs">
+        <img src="images/average-cost-1.webp" alt="average-cost-1">
+      </div>
+    </form>
+  </div>
+</section>
+  </div>
+  <section class="trust">
+  <div class="trust__container">
+    <h2 class="trust__title _title">
+      Доверьте нам заботу о вашем<br>
+      шатре — <span>мы сделаем все за вас!</span>
+    </h2>
+  </div>
+  <div class="trust__slider-wrapp">
+    <div class="trust__slider swiper-slider osn-slider">
+      <div class="osn-slider__wrapper swiper-wrapper">
+        <div class="osn-slider__slide swiper-slide">
+          <a href="images/trust-1.webp" data-fancybox class="osn-slider__photo">
+            <img class="_img" src="images/trust-1.webp" alt="trust-1">
+          </a>
+        </div>
+        <div class="osn-slider__slide swiper-slide">
+          <a href="images/trust-2.webp" data-fancybox class="osn-slider__photo">
+            <img class="_img" src="images/trust-2.webp" alt="trust-2">
+          </a>
+        </div>
+        <div class="osn-slider__slide swiper-slide">
+          <a href="images/trust-3.webp" data-fancybox class="osn-slider__photo">
+            <img class="_img" src="images/trust-3.webp" alt="trust-3">
+          </a>
+        </div>
+        <div class="osn-slider__slide swiper-slide">
+          <a href="images/trust-4.webp" data-fancybox class="osn-slider__photo">
+            <img class="_img" src="images/trust-4.webp" alt="trust-4">
+          </a>
+        </div>
+        <div class="osn-slider__slide swiper-slide">
+          <a href="images/trust-5.webp" data-fancybox class="osn-slider__photo">
+            <img class="_img" src="images/trust-5.webp" alt="trust-5">
+          </a>
+        </div>
+      </div>
+      <div
+        class="swiper-button-next swiper-arrow _slider-button _slider-button_next swiper-arrow_next osn-slider__arrow osn-slider__arrow_next  _icon-arrow _icon-white">
+      </div>
+      <div
+        class="swiper-button-prev  swiper-arrow _slider-button _slider-button_prev  swiper-arrow_prev osn-slider__arrow osn-slider__arrow_prev   _icon-arrow _icon-white">
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="video-reviews">
+  <div class="container">
+    <h2 class="video-reviews__title _title">
+      Ознакомьтесь <br><span>с видео-отзывами клиентов</span>
+    </h2>
+    <div class="video-reviews__videos">
+      <a data-fancybox href="#" class="video-reviews__video">
+        <img src="images/video-reviews-1.webp" alt="video-reviews-1">
+      </a>
+      <a data-fancybox href="#" class="video-reviews__video">
+        <img src="images/video-reviews-1.webp" alt="video-reviews-1">
+      </a>
+      <a data-fancybox href="#" class="video-reviews__video">
+        <img src="images/video-reviews-1.webp" alt="video-reviews-1">
+      </a>
+      <a data-fancybox href="#" class="video-reviews__video">
+        <img src="images/video-reviews-1.webp" alt="video-reviews-1">
+      </a>
+    </div>
+  </div>
+</section>
+  <section class="callback-block">
+  <div class="container">
+    <form action="#" method="POST" action="#" enctype="multipart/form-data" class="callback-block__form form form-submit">
+      <div class="form__content">
+        <input type="hidden" name="from" value="Получить индивидуальную разработку проекта">
+        <h2 class="form__title form__title_32">
+          <b>Подготовим<br>
+          лучшее предложение</b>
+        </h2>
+        <h3 class="form__subtitle">
+          Оставьте заявку, и мы подберем<br>
+          идеальный сервисный пакет и<br> лучшее решение под ваши задачи, <br>для вашего шатра.
+        </h3>
+        <div class="form__inner">
+          <div class="form__items">
+            <input type="tel" class="form__input form-control" name="phone" placeholder="Введите ваш телефон"
+              required="">
+            <div class="form__tz">
+              <input
+                accept="image/*, .doc, .docx, .xml, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document, application/pdf"
+                id="file" name="file" type="file">
+              <label class="_icon-svg-add _icon-tz _icon-orange" for="file">
+            
+                Прикрепить КП</label>
+              <span id="file-name"></span>
+            </div>
+            <button class="form__button _main-btn" type="submit">
+              ОСтавить заявку</button>
+          </div>
+          <label class="checkbox-block">
+              <input type="checkbox" name="access" required checked>
+              <span>
+                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 7.32575L6.74991 11.0728L15 2.82275" stroke="white" stroke-width="4.22287" stroke-linecap="round"/>
+</svg>
+
+              </span>
+              <p>
+                Я принимаю условия <a data-fancybox="" class="_link" href="#politics" data-fancybox="">политики
+                  конфиденциальности</a>
+              </p>
+            </label>
+          <div class="form__footer form__footer_vertical">
+            <p class="form__callback _icon-phone _icon-orange _main-text">
+              <span>Или звоните <a href="tel:+78001001010">+7 800 100 10 10</a></span>
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</section>
+  <section class="recommendations">
+  <div class="container">
+    <h2 class="recommendations__title _title">
+      Рекомендации <span>по установке <br>и эксплуатации</span> шатров
+    </h2>
+    <div class="recommendations__filters filters">
+      <div class="recommendations__filters-btns">
+        <div class="recommendations__filters-btn filters-btn active" data-filter="one">
+          установка и эксплуатация
+        </div>
+        <div class="recommendations__filters-btn filters-btn" data-filter="two">
+          самостоятельная мойка
+        </div>
+        <div class="recommendations__filters-btn filters-btn" data-filter="three">
+          самостоятельное хранение
+        </div>
+      </div>
+      <div class="recommendations__filters-items">
+        <div class="recommendations__filters-item accordion filters-item one">
+          <div class="recommendations__item-accordion accordion-item">
+            <div class="recommendations__item-header accordion-header">
+              <h4 class="recommendations__item-title">
+                Фиксация шатра
+              </h4>
+              <div class="open-item">
+                <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="recommendations__item-body accordion-body">
+              <p class="recommendations__item-text">
+                Для обеспечения устойчивости шатра используйте различные методы крепления в зависимости от типа
+                поверхности.
+              </p>
+            </div>
+          </div>
+          <div class="recommendations__item-accordion accordion-item">
+            <div class="recommendations__item-header accordion-header">
+              <h4 class="recommendations__item-title">
+                Защита от ветра
+              </h4>
+              <div class="open-item">
+                <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="recommendations__item-body accordion-body">
+              <p class="recommendations__item-text">
+                Защита от ветра
+              </p>
+            </div>
+          </div>
+          <div class="recommendations__item-accordion accordion-item">
+            <div class="recommendations__item-header accordion-header">
+              <h4 class="recommendations__item-title">
+                Уход
+              </h4>
+              <div class="open-item">
+                <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="recommendations__item-body accordion-body">
+              <p class="recommendations__item-text">
+                Уход
+              </p>
+            </div>
+          </div>
+          <div class="recommendations__item-accordion accordion-item">
+            <div class="recommendations__item-header accordion-header">
+              <h4 class="recommendations__item-title">
+                Безопасность
+              </h4>
+              <div class="open-item">
+                <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="recommendations__item-body accordion-body">
+              <p class="recommendations__item-text">
+                Безопасность
+              </p>
+            </div>
+          </div>
+          <div class="recommendations__item-accordion accordion-item">
+            <div class="recommendations__item-header accordion-header">
+              <h4 class="recommendations__item-title">
+                Ограничения
+              </h4>
+              <div class="open-item">
+                <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="recommendations__item-body accordion-body">
+              <p class="recommendations__item-text">
+                Ограничения
+              </p>
+            </div>
+          </div>
+          <div class="recommendations__item-accordion accordion-item">
+            <div class="recommendations__item-header accordion-header">
+              <h4 class="recommendations__item-title">
+                Зимняя эксплуатация
+              </h4>
+              <div class="open-item">
+                <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="recommendations__item-body accordion-body">
+              <p class="recommendations__item-text">
+                Да, иногда бывает необходимость покраски элементов лестницы на объекте и мы осуществляем такую услугу
+              </p>
+            </div>
+          </div>
+          <p class="recommendations__item-bottom">
+            Соблюдайте рекомендованные условия хранения и ухода за тентом!
+          </p>
+        </div>
+        <div class="recommendations__filters-item accordion filters-item two hidden">
+          <div class="recommendations__item-accordion accordion-item">
+            <div class="recommendations__item-header accordion-header">
+              <h4 class="recommendations__item-title">
+                Безопасность
+              </h4>
+              <div class="open-item">
+                <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="recommendations__item-body accordion-body">
+              <p class="recommendations__item-text">
+                Безопасность
+              </p>
+            </div>
+          </div>
+          <div class="recommendations__item-accordion accordion-item">
+            <div class="recommendations__item-header accordion-header">
+              <h4 class="recommendations__item-title">
+                Ограничения
+              </h4>
+              <div class="open-item">
+                <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="recommendations__item-body accordion-body">
+              <p class="recommendations__item-text">
+                Ограничения
+              </p>
+            </div>
+          </div>
+          <div class="recommendations__item-accordion accordion-item">
+            <div class="recommendations__item-header accordion-header">
+              <h4 class="recommendations__item-title">
+                Зимняя эксплуатация
+              </h4>
+              <div class="open-item">
+                <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="recommendations__item-body accordion-body">
+              <p class="recommendations__item-text">
+                Да, иногда бывает необходимость покраски элементов лестницы на объекте и мы осуществляем такую услугу
+              </p>
+            </div>
+          </div>
+          <p class="recommendations__item-bottom">
+            Соблюдайте рекомендованные условия хранения и ухода за тентом!
+          </p>
+        </div>
+        <div class="recommendations__filters-item accordion filters-item three hidden">
+          <div class="recommendations__item-accordion accordion-item">
+            <div class="recommendations__item-header accordion-header">
+              <h4 class="recommendations__item-title">
+                Фиксация шатра
+              </h4>
+              <div class="open-item">
+                <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="recommendations__item-body accordion-body">
+              <p class="recommendations__item-text">
+                Для обеспечения устойчивости шатра используйте различные методы крепления в зависимости от типа
+                поверхности.
+              </p>
+            </div>
+          </div>
+          <div class="recommendations__item-accordion accordion-item">
+            <div class="recommendations__item-header accordion-header">
+              <h4 class="recommendations__item-title">
+                Защита от ветра
+              </h4>
+              <div class="open-item">
+                <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="recommendations__item-body accordion-body">
+              <p class="recommendations__item-text">
+                Защита от ветра
+              </p>
+            </div>
+          </div>
+          <div class="recommendations__item-accordion accordion-item">
+            <div class="recommendations__item-header accordion-header">
+              <h4 class="recommendations__item-title">
+                Уход
+              </h4>
+              <div class="open-item">
+                <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="recommendations__item-body accordion-body">
+              <p class="recommendations__item-text">
+                Уход
+              </p>
+            </div>
+          </div>
+          <p class="recommendations__item-bottom">
+            Соблюдайте рекомендованные условия хранения и ухода за тентом!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="recommendations__bottom">
+      <div class="recommendations__bottom-left">
+        <h4 class="recommendations__bottom-title">
+          Возникли вопросы?
+        </h4>
+        <p class="recommendations__bottom-subtitle">
+          Мы всегда готовы предоставить профессиональную помощь и поддержку
+        </p>
+      </div>
+      <a class="recommendations__bottom-btn _main-btn" href="#callback">
+        Задать свой вопрос
+      </a>
+    </div>
+  </div>
+</section>
+  <div class="gray-block _section-middle">
+    <section class="questions">
+  <div class="container">
+    <h2 class="questions__title _title">
+      Часто <span>задаваемые вопросы</span>
+    </h2>
+    <div class="questions__accordion accordion">
+      <div class="questions__accordion-item accordion-item">
+        <div class="questions__accordion-header accordion-header">
+          <h4 class="questions__accordion-title">
+            Как оформить заказ?
+          </h4>
+          <div class="open-item">
+            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="questions__accordion-body accordion-body">
+          <p class="questions__accordion-text">
+            Вы можете оформить заказ через сайт, позвонив нам или написав в мессенджеры. Оставьте заявку, и наш менед
+          </p>
+        </div>
+      </div>
+      <div class="questions__accordion-item accordion-item">
+        <div class="questions__accordion-header accordion-header">
+          <h4 class="questions__accordion-title">
+            Какие условия хранения шатров?
+          </h4>
+          <div class="open-item">
+            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="questions__accordion-body accordion-body">
+          <p class="questions__accordion-text">
+            Безопасность
+          </p>
+        </div>
+      </div>
+      <div class="questions__accordion-item accordion-item">
+        <div class="questions__accordion-header accordion-header">
+          <h4 class="questions__accordion-title">
+            Сколько занимает мойка шатра?
+          </h4>
+          <div class="open-item">
+            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="questions__accordion-body accordion-body">
+          <p class="questions__accordion-text">
+            Безопасность
+          </p>
+        </div>
+      </div>
+      <div class="questions__accordion-item accordion-item">
+        <div class="questions__accordion-header accordion-header">
+          <h4 class="questions__accordion-title">
+            Как быстро можно вызвать специалиста?
+          </h4>
+          <div class="open-item">
+            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="questions__accordion-body accordion-body">
+          <p class="questions__accordion-text">
+            Безопасность
+          </p>
+        </div>
+      </div>
+      <div class="questions__accordion-item accordion-item">
+        <div class="questions__accordion-header accordion-header">
+          <h4 class="questions__accordion-title">
+            Можно ли заказать индивидуальные услуги?
+          </h4>
+          <div class="open-item">
+            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="questions__accordion-body accordion-body">
+          <p class="questions__accordion-text">
+            Безопасность
+          </p>
+        </div>
+      </div>
+      <div class="questions__accordion-item accordion-item">
+        <div class="questions__accordion-header accordion-header">
+          <h4 class="questions__accordion-title">
+            Как узнать стоимость услуг?
+          </h4>
+          <div class="open-item">
+            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="questions__accordion-body accordion-body">
+          <p class="questions__accordion-text">
+            Безопасность
+          </p>
+        </div>
+      </div>
+      <div class="questions__accordion-item accordion-item">
+        <div class="questions__accordion-header accordion-header">
+          <h4 class="questions__accordion-title">
+            Вы работаете по всей России?
+          </h4>
+          <div class="open-item">
+            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="questions__accordion-body accordion-body">
+          <p class="questions__accordion-text">
+            Безопасность
+          </p>
+        </div>
+      </div>
+      <div class="questions__accordion-item accordion-item">
+        <div class="questions__accordion-header accordion-header">
+          <h4 class="questions__accordion-title">
+            Какие материалы и средства вы используете для мойки шатров?
+          </h4>
+          <div class="open-item">
+            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="questions__accordion-body accordion-body">
+          <p class="questions__accordion-text">
+            Безопасность
+          </p>
+        </div>
+      </div>
+      <div class="questions__accordion-item accordion-item">
+        <div class="questions__accordion-header accordion-header">
+          <h4 class="questions__accordion-title">
+            Вы предоставляете консультации по эксплуатации шатров?
+          </h4>
+          <div class="open-item">
+            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="questions__accordion-body accordion-body">
+          <p class="questions__accordion-text">
+            Безопасность
+          </p>
+        </div>
+      </div>
+      <div class="questions__accordion-item accordion-item">
+        <div class="questions__accordion-header accordion-header">
+          <h4 class="questions__accordion-title">
+            Какой максимальный размер шатра вы обслуживаете?
+          </h4>
+          <div class="open-item">
+            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="questions__accordion-body accordion-body">
+          <p class="questions__accordion-text">
+            Безопасность
+          </p>
+        </div>
+      </div>
+      <div class="questions__accordion-item accordion-item">
+        <div class="questions__accordion-header accordion-header">
+          <h4 class="questions__accordion-title">
+            Какие гарантии на работы?
+          </h4>
+          <div class="open-item">
+            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L8 8L15 0.999999" stroke="#DBA250" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="questions__accordion-body accordion-body">
+          <p class="questions__accordion-text">
+            Безопасность
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section class="personalized-service _section">
+  <div class="container">
+
+    <form action="#" method="POST" action="#" enctype="multipart/form-data"
+      class="personalized-service__form form  form_black form-submit">
+      <div class="form__content">
+        <input type="hidden" name="from" value="Получите бесплатный расчет стоимости входных групп уже сегодня">
+        <h2 class="form__title ">
+          Если у вас остались вопросы, <br>свяжитесь с нами!
+        </h2>
+        <h3 class="form__subtitle">
+          Мы всегда рады помочь
+        </h3>
+        <div class="form__inner">
+          <div class="form__items form__items_horizontal">
+            <input type="tel" class="form__input form-control" name="phone" placeholder="Введите ваш телефон"
+              required="">
+            <input type="email" class="form__input form-control" name="email" placeholder="Введите ваш e-mail" required="">
+
+            <button class="form__button _main-btn" type="submit">
+              Получить расчет<br>
+              стоимости брендирования
+            </button>
+          </div>
+          <div class="form__footer " style="justify-content: left;">
+            <p class="form__callback _icon-phone _icon-orange">
+              <span>Или звоните: <a href="tel:+78001001010">+7 800 100 10 10</a></span>
+            </p>
+            <label class="checkbox-block">
+              <input type="checkbox" name="access" required checked>
+              <span>
+                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 7.32575L6.74991 11.0728L15 2.82275" stroke="white" stroke-width="4.22287" stroke-linecap="round"/>
+</svg>
+
+              </span>
+              <p>
+                Я принимаю условия <a data-fancybox="" class="_link" href="#politics" data-fancybox="">политики
+                  конфиденциальности</a>
+              </p>
+            </label>
+          </div>
+
+        </div>
+      </div>
+      <div class="form__docs">
+        <img src="images/personalized-service-1.webp" alt="">
+      </div>
+    </form>
+  </div>
+</section>
+  </div>
+  <section class="map-block">
+  <div class="container">
+    <h2 class="map-block__title _title">
+      <span>Хотите обсудить</span> все вопросы лично?
+    </h2>
+    <h3 class="map-block__subtitle">
+      Приезжайте в офис или на производство
+    </h3>
+    <div class="map-block__phone _icon-phone">
+      <div class="map-block__phone-inner">
+        <p class="map-block__phone-text _main-text">Единый контактный номер: <a href="tel:+74991150871"
+            class="map-block__phone-link">8 499 115 08 71</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="map-block__map">
+    <div class="mymap" id="map"></div>
+    <div class="mymap" id="map2" style="display: none;"></div>
+    <div class="map-block__container container relative">
+      <div class="map-block__contacts">
+        <div class="map-block__contacts-buttons">
+          <button class="map-block__button map-block__button_active" type="button">офис в г. москва</button>
+          <button class="map-block__button" type="button">Производство в г. Калуга</button>
+        </div>
+        <div class="map-block__contacts-inner">
+          <div class="map-block__contacts-block">
+            <p class="map-block__contacts-title">Адрес офиса:</p>
+            <p class="map-block__contacts-text">Московская обл., <br>
+              г. Одинцово, ул. Маковского, 7с8</p>
+          </div>
+          <div class="map-block__contacts-block">
+            <p class="map-block__contacts-title">График работы офиса:</p>
+            <p class="map-block__contacts-text">Понедельник — пятница, <br>
+              9:00 — 18:00</p>
+          </div>
+        </div>
+        <div class="map-block__contacts-inner" style="display: none;">
+          <div class="map-block__contacts-block">
+            <p class="map-block__contacts-title">Адрес производства:</p>
+            <p class="map-block__contacts-text">г. Калуга, <br>
+              ул. Московская, д. 287А</p>
+          </div>
+          <div class="map-block__contacts-block">
+            <p class="map-block__contacts-title">График работы производства:</p>
+            <p class="map-block__contacts-text">Понедельник — пятница, <br>
+              9:00 — 18:00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
 
 </main>
 <footer class="footer">
