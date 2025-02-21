@@ -245,13 +245,13 @@
   border-top: 1px solid rgb(0, 0, 0, 0.1);
 
   &.sticky {
-      position: fixed;
-      top: 0;
-      z-index: 1000;
-      width: 100%;
-      margin-top: 0;
-      background-color: #fff;
-    }
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    margin-top: 0;
+    background-color: #fff;
+  }
 
   @include lg {
     padding: 7px 0;
@@ -526,6 +526,40 @@
       &:hover {
         background: #54c0f8;
       }
+    }
+
+    &_vk {
+      background-color: #0077FF;
+
+      &:hover {
+        background: #2a7ddb;
+      }
+    }
+
+    &_viber {
+      background-color: #7C509A;
+
+      &:hover {
+        background: #ad71d5;
+      }
+    }
+
+    &_youtube {
+      background-color: #F40000;
+
+      &:hover {
+        background: #ec2626;
+      }
+
+    }
+
+    &_yandex {
+      background-color: #FFFFFF;
+
+      &:hover {
+        background: #d1d0d0;
+      }
+
     }
   }
 

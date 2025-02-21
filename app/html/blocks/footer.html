@@ -1,29 +1,115 @@
 <footer class="footer">
-  <div class="container">
-    <div class="footer__inner">
-      <a class="footer__logo logo" href="/">
-        <img class="footer__logo-img" src="images/logo.webp" alt="">
-        <p class="footer__logo-text">
-          Лестницы <br>для всех
-        </p>
+
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer__navs">
+        <div class="footer__navs-wrapper">
+          <p class="footer__navs-title footer__title footer__text">
+            Страницы сайта:
+          </p>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list list-point">
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Главная</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">О нас</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Услуги</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Галерея</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Рекомендации</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">FAQ</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__links footer__contacts">
+        <div class="footer__links-wrapper">
+          <div class="footer__links-title footer__title footer__text">
+            Мессенджеры:
+          </div>
+          <div class="footer__messengers messengers">
+            <a href="https://wa.me/79190339577"
+              class="messengers__messenger messengers__messenger_whatsapp _icon-whatsapp _icon-white"></a>
+            <a href="#" class="messengers__messenger messengers__messenger_telegram _icon-telegram _icon-white"></a>
+          </div>
+        </div>
+        <div class="footer__links-wrapper">
+          <div class="footer__links-title footer__title footer__text">
+            Социальные сети:
+          </div>
+          <div class="footer__socials messengers">
+            <a href="https://wa.me/79190339577" class="messengers__messenger messengers__messenger_vk">
+              @@include('../../images/icons/vk.svg')
+            </a>
+            <a href="#" class="messengers__messenger messengers__messenger_telegram _icon-telegram _icon-white"></a>
+            <a href="#" class="messengers__messenger messengers__messenger_viber">
+              @@include('../../images/icons/viber.svg')
+            </a>
+            <a href="#" class="messengers__messenger messengers__messenger_youtube">
+              @@include('../../images/icons/youtube.svg')
+            </a>
+            <a href="#" class="messengers__messenger messengers__messenger_yandex ">
+              @@include('../../images/icons/yandex.svg')
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__contacts">
+        <div class="footer__item">
+          <p class="footer__title footer__text">
+            напишите нам на почту:
+          </p>
+          <a href="mailto:info@fabrika-shatrov.ru" class="footer__mail _orange-text _link">info@fabrika-shatrov.ru</a>
+        </div>
+        <div class="footer__item">
+          <p class="footer__title footer__text">
+            Телефон:
+          </p>
+          <a href="tel:+78002229233" class="footer__phone ">8 800 222 92 33</a>
+          <a href="#callback" data-fancybox class="footer__callback _orange-text _link footer__text">Перезвоните мне</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <a href="/" class="footer__logo">
+        <img src="images/icons/logo-white.svg" alt="logo">
+        <p class="footer__logo-description footer__text">
+          Российское <br>
+          производство <br>
+          полного цикла</p>
       </a>
-      <a class="footer__policy" href="#politics" data-fancybox="">
-        Политика конфиденциальности
-      </a>
-      <a class="footer__mail" href="mailto:sales@stairs.ru">
-        <!-- @@include('../../images/icons/mail.svg') -->
-        sales@stairs.ru
-      </a>
-      <div class="footer__phone">
-        <a class="footer__phone-top" href="tel:+74996382232">
-          <!-- @@include('../../images/icons/phone.svg') -->
-          <p class="footer__phone-number">
-            +7 495 106 00 49
+      <div class="footer__middle ">
+        <p class="footer__info footer__text">ООО «ФАБРИКА ШАТРОВ» <br>
+          ИНН 5024161616</p>
+        <a href="#politics" data-fancybox class="footer__politics _link">
+          Политика защиты и обработки <br>
+          персональных данных</a>
+      </div>
+      <div class="footer__right">
+        <a href="https://t-f-a.agency/lp" target="_blank" class="footer__tfa">
+          <p class="footer__tfa-text _link  footer__text">
+            Разработка сайта
           </p>
         </a>
-        <a  href="#callback" data-fancybox="" class="footer__phone-link _link">
-          Перезвоните нам
-        </a>
+        <p class="footer__text footer__descriptor  footer__text">
+          © 2015-2024 «ФАБРИКА ШАТРОВ» <br>
+          Все права защищены
+        </p>
       </div>
     </div>
   </div>

@@ -1,100 +1,260 @@
 .footer {
-  padding: 25px 0;
 
-  &__inner {
+  .container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
+    align-items: flex-start;
+    gap: 194px;
+    color: var(--light-color);
 
-    @include lg {
-      flex-wrap: wrap;
-      justify-content: center;
+    @include xl {
+      gap: 30px;
+      justify-content: space-between;
     }
 
     @include md {
-      justify-content: start;
-      align-items: start;
       flex-direction: column;
+      align-items: center;
+      gap: 20px;
     }
   }
+
+  .messengers {
+    display: flex;
+  }
+
+
+  &__top {
+    padding: 50px 0;
+    background: rgb(40, 40, 40);
+
+    @include md {
+      padding: 30px 0;
+    }
+  }
+
+
+  &__navs {
+    display: flex;
+    gap: 100px;
+
+    @include lg {
+      gap: 30px;
+    }
+
+    @include md {
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    @include sm {
+      flex-wrap: wrap;
+    }
+  }
+
+
+  &__navs-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+
+
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 700;
+
+    @include md {
+      margin-bottom: 5px;
+    }
+  }
+
+
+
+
+
+
+
+
+  &__nav-link {
+    font-size: 16px;
+    line-height: calc(28/16*100%);
+    color: var(--light-color);
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @include sm {
+      gap: 15px 30px;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+
+
+
+  &__mail {
+    font-size: 18px;
+    font-weight: 500;
+
+    &:hover {
+      color: #d94000;
+    }
+  }
+
+
+
+
+  &__phone {
+    font-weight: 500;
+    color: var(--light-color);
+    font-size: 18px;
+
+    @include md {
+      line-height: 1;
+    }
+
+    &:hover {
+      color: #d94000;
+    }
+  }
+
+
+  &__callback {
+    margin-top: 5px;
+    display: block;
+    font-weight: 500;
+
+    &:hover {
+      color: #d94000;
+    }
+  }
+
+
+  &__bottom {
+    padding: 20px 0;
+    background: rgb(33, 33, 33);
+    color: var(--light-color);
+    font-size: 14px;
+
+    .container {
+      align-items: center;
+      justify-content: space-between;
+      gap: 0;
+
+      @include md {
+        padding: 10px 0;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
+    }
+
+  }
+
 
   &__logo {
     display: flex;
     align-items: center;
-    max-width: 295px;
     gap: 20px;
+    color: var(--light-color);
+  }
+
+
+
+
+  &__text {
+    font-size: 14px;
+    line-height: 157.142857%;
+  }
+
+
+  &__middle {
+    display: flex;
+    align-items: center;
+    gap: 57px;
 
     @include xl {
-      gap: 15px;
-      max-width: 250px;
+      gap: 10px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    @include md {
+      align-items: center;
+      gap: 5px;
     }
   }
 
-  &__logo-img {
-    @include xl {
-      max-width: 160px;
+
+
+
+  &__politics {
+    color: var(--light-color);
+    opacity: 0.6;
+
+    &:hover {
+      color: #d94000;
     }
   }
 
-  &__policy {
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    transition: all .3s;
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 57px;
 
     @include lg {
-      order: 1;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
     }
 
-
-    &:hover {
-      color: var(--primary);
+    @include md {
+      align-items: center;
     }
   }
 
-  &__mail {
+
+  &__tfa {
     display: flex;
+    flex-direction: column;
+    gap: 5px;
     align-items: center;
-    gap: 12px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.2;
-    transition: all .3s;
-
+    
+    img {
+      filter: grayscale(1);
+      transition: 0.3s all;
+    }
+    
     &:hover {
-      color: var(--primary);
+      img {
+        transition: 0.3s all;
+        filter: none;
+      }
+      
+      .footer__tfa-text {
+        color: #fc4c02;
+        opacity: 1;
+      }
     }
   }
 
-  &__phone-top {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 5px;
-  }
-
-  &__phone-number {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    transition: all .3s;
-
-    @include xl {
-      font-size: 20px;
-    }
-
-    &:hover {
-      color: var(--primary);
-    }
-  }
-
-  &__phone-link {
-    margin-left: 25px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    text-underline-offset: 5px;
+  &__tfa-text {
+    opacity: 0.2;
+    color: var(--light-color);
   }
 }
