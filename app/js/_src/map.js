@@ -73,7 +73,7 @@ function initializeMap() {
       },
       {
         iconLayout: "default#image",
-        iconImageHref: "/images/marker.webp",
+        iconImageHref: "../images/marker.webp",
         iconImageSize: [30, 35],
         iconImageOffset: [-5, -38],
       }
@@ -87,7 +87,7 @@ function initializeMap() {
       },
       {
         iconLayout: "default#image",
-        iconImageHref: "/images/marker.webp",
+        iconImageHref: "../images/marker.webp",
         iconImageSize: [30, 35],
         iconImageOffset: [-5, -38],
       }

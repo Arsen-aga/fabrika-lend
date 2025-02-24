@@ -1,29 +1,3 @@
-<!-- <div class="modal__callback modal" style="display: none;" id="callback">
-  <form action="#" class="modal__callback-form form-submit" method="POST" enctype="multipart/form-data">
-    <input type="hidden" name="from" value="Наш специалист свяжется с вами в ближайшее время">
-    <input type="hidden" name="newToken" value="<?php echo (rand(10000, 99999)) ?>">
-    <h2 class="modal__callback-title">
-      Наш специалист свяжется с вами в ближайшее время
-    </h2>
-    <div class="modal__callback-inner">
-      <input class="modal__callback-inp _input" type="text" name="name" placeholder="Имя" required>
-      <input class="modal__callback-inp _input" type="tel" name="phone" placeholder="Номер телефона" required>
-      <button type="submit" class="modal__callback-btn _main-btn">
-        Отправить
-      </button>
-      <label class="modal__checkbox-block checkbox-block">
-        <input type="checkbox" name="access" required checked>
-        <span>
-          @@include('../../images/icons/check.svg')
-        </span>
-        <p>
-          Я принимаю условия <a data-fancybox="" class="_link" href="#politics" data-fancybox="">политики
-            конфиденциальности</a>
-        </p>
-      </label>
-    </div>
-  </form>
-</div> -->
 <div id="politics" style="display: none;" class="politics-modal fancybox__content">
   <div class="modal__container">
     <h3 class="politics-modal__title">Политика конфиденциальности</h3>
@@ -57,7 +31,6 @@
     </div>
   </div>
 </div>
-
 
 <div id="callback" style="display: none;" class="callback-modal">
   <div class=" callback-modal__inner">
@@ -111,5 +84,479 @@
       </div>
     </form>
 
+  </div>
+</div>
+
+<div class="how-we-work-modal" style="display: none;" id="how-we-work-modal">
+  <div class="how-we-work-modal__inner">
+    <div class="how-we-work-modal__left">
+      <div class="how-we-work-modal__wrapper">
+        <img class="how-we-work-modal__img _img" src="images/how-we-work-1.webp" alt="">
+      </div>
+    </div>
+    <div class="how-we-work-modal__right">
+      <h4 class="how-we-work-modal__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur esse blanditiis magni dolorem. Exercitationem amet in necessitatibus quibusdam sequi. Esse ut, explicabo et praesentium porro expedita dolor minima temporibus at?</h4>
+      <p class="how-we-work-modal__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum repellat dolor culpa sed at ex dignissimos eveniet placeat numquam beatae. Pariatur neque eveniet quasi! Corporis quidem neque eveniet repellat eius.</p>
+    </div>
+  </div>
+</div>
+
+<div style="display: none;" class="modal-city" id="select-city">
+  <div class="modal-content modal-city__container">
+    <div class="modal-city__search-box">
+      <input class="modal-city__search-input" type="text" id="city-search" placeholder="Поиск по названию">
+      <span class="modal-city__search-image" src="" alt=""></span>
+    </div>
+    <div id="city-container">
+      <div class="modal-city__city-name country-header">Россия</div>
+      <div class="modal-city__city-list city-list">
+        <a class="modal-city__city-link" data-city="Абакан">Абакан</a>
+        <a class="modal-city__city-link" data-city="Альметьевск">Альметьевск</a>
+        <a class="modal-city__city-link" data-city="Анапа">Анапа</a>
+        <a class="modal-city__city-link" data-city="Ангарск">Ангарск</a>
+        <a class="modal-city__city-link" data-city="Архангельск">Архангельск</a>
+        <a class="modal-city__city-link" data-city="Астрахань">Астрахань</a>
+        <a class="modal-city__city-link" data-city="Барнаул">Барнаул</a>
+        <a class="modal-city__city-link" data-city="Белгород">Белгород</a>
+        <a class="modal-city__city-link" data-city="Бийск">Бийск</a>
+        <a class="modal-city__city-link" data-city="Благовещенск">Благовещенск</a>
+        <a class="modal-city__city-link" data-city="Братск">Братск</a>
+        <a class="modal-city__city-link" data-city="Брянск">Брянск</a>
+        <a class="modal-city__city-link" data-city="Великий Новгород">Великий Новгород</a>
+        <a class="modal-city__city-link" data-city="Владивосток">Владивосток</a>
+        <a class="modal-city__city-link" data-city="Владикавказ">Владикавказ</a>
+        <a class="modal-city__city-link" data-city="Владимир">Владимир</a>
+        <a class="modal-city__city-link" data-city="Волгоград">Волгоград</a>
+        <a class="modal-city__city-link" data-city="Вологда">Вологда</a>
+        <a class="modal-city__city-link" data-city="Воронеж">Воронеж</a>
+        <a class="modal-city__city-link" data-city="Грозный">Грозный</a>
+        <a class="modal-city__city-link" data-city="Екатеринбург">Екатеринбург</a>
+        <a class="modal-city__city-link" data-city="Иваново">Иваново</a>
+        <a class="modal-city__city-link" data-city="Ижевск">Ижевск</a>
+        <a class="modal-city__city-link" data-city="Иркутск">Иркутск</a>
+        <a class="modal-city__city-link" data-city="Йошкар-Ола">Йошкар-Ола</a>
+        <a class="modal-city__city-link" data-city="Казань">Казань</a>
+        <a class="modal-city__city-link" data-city="Калининград">Калининград</a>
+        <a class="modal-city__city-link" data-city="Калуга">Калуга</a>
+        <a class="modal-city__city-link" data-city="Кемерово">Кемерово</a>
+        <a class="modal-city__city-link" data-city="Киров">Киров</a>
+        <a class="modal-city__city-link" data-city="Комсомольск-на-Амуре">Комсомольск-на-Амуре</a>
+        <a class="modal-city__city-link" data-city="Кострома">Кострома</a>
+        <a class="modal-city__city-link" data-city="Краснодар">Краснодар</a>
+        <a class="modal-city__city-link" data-city="Красноярск">Красноярск</a>
+        <a class="modal-city__city-link" data-city="Курган">Курган</a>
+        <a class="modal-city__city-link" data-city="Курск">Курск</a>
+        <a class="modal-city__city-link" data-city="Кызыл">Кызыл</a>
+        <a class="modal-city__city-link" data-city="Липецк">Липецк</a>
+        <a class="modal-city__city-link" data-city="Магадан">Магадан</a>
+        <a class="modal-city__city-link" data-city="Магнитогорск">Магнитогорск</a>
+        <a class="modal-city__city-link" data-city="Майкоп">Майкоп</a>
+        <a class="modal-city__city-link" data-city="Махачкала">Махачкала</a>
+        <a class="modal-city__city-link" data-city="Москва">Москва</a>
+        <a class="modal-city__city-link" data-city="Мурманск">Мурманск</a>
+        <a class="modal-city__city-link" data-city="Набережные Челны">Набережные Челны</a>
+        <a class="modal-city__city-link" data-city="Нальчик">Нальчик</a>
+        <a class="modal-city__city-link" data-city="Нижний Новгород">Нижний Новгород</a>
+        <a class="modal-city__city-link" data-city="Новокузнецк">Новокузнецк</a>
+        <a class="modal-city__city-link" data-city="Новороссийск">Новороссийск</a>
+        <a class="modal-city__city-link" data-city="Новосибирск">Новосибирск</a>
+        <a class="modal-city__city-link" data-city="Омск">Омск</a>
+        <a class="modal-city__city-link" data-city="Оренбург">Оренбург</a>
+        <a class="modal-city__city-link" data-city="Орёл">Орёл</a>
+        <a class="modal-city__city-link" data-city="Пенза">Пенза</a>
+        <a class="modal-city__city-link" data-city="Пермь">Пермь</a>
+        <a class="modal-city__city-link" data-city="Петрозаводск">Петрозаводск</a>
+        <a class="modal-city__city-link" data-city="Петропавловск-Камчатский">Петропавловск-Камчатский</a>
+        <a class="modal-city__city-link" data-city="Псков">Псков</a>
+        <a class="modal-city__city-link" data-city="Ростов-на-Дону">Ростов-на-Дону</a>
+        <a class="modal-city__city-link" data-city="Рубцовск">Рубцовск</a>
+        <a class="modal-city__city-link" data-city="Рузаевка">Рузаевка</a>
+        <a class="modal-city__city-link" data-city="Рыбинск">Рыбинск</a>
+        <a class="modal-city__city-link" data-city="Рыльск">Рыльск</a>
+        <a class="modal-city__city-link" data-city="Ряжск">Ряжск</a>
+        <a class="modal-city__city-link" data-city="Рязань">Рязань</a>
+        <a class="modal-city__city-link" data-city="Салават">Салават</a>
+        <a class="modal-city__city-link" data-city="Салаир">Салаир</a>
+        <a class="modal-city__city-link" data-city="Салехард">Салехард</a>
+        <a class="modal-city__city-link" data-city="Сальск">Сальск</a>
+        <a class="modal-city__city-link" data-city="Самара">Самара</a>
+        <a class="modal-city__city-link" data-city="Санкт-Петербург">Санкт-Петербург</a>
+        <a class="modal-city__city-link" data-city="Сарапул">Сарапул</a>
+        <a class="modal-city__city-link" data-city="Саратов">Саратов</a>
+        <a class="modal-city__city-link" data-city="Саров">Саров</a>
+        <a class="modal-city__city-link" data-city="Сасово">Сасово</a>
+        <a class="modal-city__city-link" data-city="Сатка">Сатка</a>
+        <a class="modal-city__city-link" data-city="Сафоново">Сафоново</a>
+        <a class="modal-city__city-link" data-city="Саяногорск">Саяногорск</a>
+        <a class="modal-city__city-link" data-city="Саянск">Саянск</a>
+        <a class="modal-city__city-link" data-city="Светлогорск">Светлогорск</a>
+        <a class="modal-city__city-link" data-city="Светлоград">Светлоград</a>
+        <a class="modal-city__city-link" data-city="Светлый">Светлый</a>
+        <a class="modal-city__city-link" data-city="Светогорск">Светогорск</a>
+        <a class="modal-city__city-link" data-city="Свирск">Свирск</a>
+        <a class="modal-city__city-link" data-city="Свободный">Свободный</a>
+        <a class="modal-city__city-link" data-city="Себеж">Себеж</a>
+        <a class="modal-city__city-link" data-city="Северобайкальск">Северобайкальск</a>
+        <a class="modal-city__city-link" data-city="Северодвинск">Северодвинск</a>
+        <a class="modal-city__city-link" data-city="Северо-Курильск">Северо-Курильск</a>
+        <a class="modal-city__city-link" data-city="Североморск">Североморск</a>
+        <a class="modal-city__city-link" data-city="Североуральск">Североуральск</a>
+        <a class="modal-city__city-link" data-city="Северск">Северск</a>
+        <a class="modal-city__city-link" data-city="Севск">Севск</a>
+        <a class="modal-city__city-link" data-city="Сегежа">Сегежа</a>
+        <a class="modal-city__city-link" data-city="Сельцо">Сельцо</a>
+        <a class="modal-city__city-link" data-city="Семенов">Семенов</a>
+        <a class="modal-city__city-link" data-city="Семикаракорск">Семикаракорск</a>
+        <a class="modal-city__city-link" data-city="Семилуки">Семилуки</a>
+        <a class="modal-city__city-link" data-city="Сенгилей">Сенгилей</a>
+        <a class="modal-city__city-link" data-city="Серафимович">Серафимович</a>
+        <a class="modal-city__city-link" data-city="Сергач">Сергач</a>
+        <a class="modal-city__city-link" data-city="Сергиев Посад">Сергиев Посад</a>
+        <a class="modal-city__city-link" data-city="Сердобск">Сердобск</a>
+        <a class="modal-city__city-link" data-city="Серов">Серов</a>
+        <a class="modal-city__city-link" data-city="Серпухов">Серпухов</a>
+        <a class="modal-city__city-link" data-city="Сертолово">Сертолово</a>
+        <a class="modal-city__city-link" data-city="Сибай">Сибай</a>
+        <a class="modal-city__city-link" data-city="Сим">Сим</a>
+        <a class="modal-city__city-link" data-city="Симферополь">Симферополь</a>
+        <a class="modal-city__city-link" data-city="Сковородино">Сковородино</a>
+        <a class="modal-city__city-link" data-city="Скопин">Скопин</a>
+        <a class="modal-city__city-link" data-city="Славгород">Славгород</a>
+        <a class="modal-city__city-link" data-city="Славск">Славск</a>
+        <a class="modal-city__city-link" data-city="Славянск-на-Кубани">Славянск-на-Кубани</a>
+        <a class="modal-city__city-link" data-city="Сланцы">Сланцы</a>
+        <a class="modal-city__city-link" data-city="Слободской">Слободской</a>
+        <a class="modal-city__city-link" data-city="Слюдянка">Слюдянка</a>
+        <a class="modal-city__city-link" data-city="Смоленск">Смоленск</a>
+        <a class="modal-city__city-link" data-city="Снежинск">Снежинск</a>
+        <a class="modal-city__city-link" data-city="Снежногорск">Снежногорск</a>
+        <a class="modal-city__city-link" data-city="Собинка">Собинка</a>
+        <a class="modal-city__city-link" data-city="Советск">Советск</a>
+        <a class="modal-city__city-link" data-city="Советск">Советск</a>
+        <a class="modal-city__city-link" data-city="Советская Гавань">Советская Гавань</a>
+        <a class="modal-city__city-link" data-city="Советский">Советский</a>
+        <a class="modal-city__city-link" data-city="Сокол">Сокол</a>
+        <a class="modal-city__city-link" data-city="Солигалич">Солигалич</a>
+        <a class="modal-city__city-link" data-city="Соликамск">Соликамск</a>
+        <a class="modal-city__city-link" data-city="Солнечногорск">Солнечногорск</a>
+        <a class="modal-city__city-link" data-city="Сольвычегодск">Сольвычегодск</a>
+        <a class="modal-city__city-link" data-city="Соль-Илецк">Соль-Илецк</a>
+        <a class="modal-city__city-link" data-city="Сольцы">Сольцы</a>
+        <a class="modal-city__city-link" data-city="Сорочинск">Сорочинск</a>
+        <a class="modal-city__city-link" data-city="Сорск">Сорск</a>
+        <a class="modal-city__city-link" data-city="Сосенский">Сосенский</a>
+        <a class="modal-city__city-link" data-city="Сосновка">Сосновка</a>
+        <a class="modal-city__city-link" data-city="Сосновоборск">Сосновоборск</a>
+        <a class="modal-city__city-link" data-city="Сосновый Бор">Сосновый Бор</a>
+        <a class="modal-city__city-link" data-city="Сосногорск">Сосногорск</a>
+        <a class="modal-city__city-link" data-city="Сочи">Сочи</a>
+        <a class="modal-city__city-link" data-city="Спас-Деменск">Спас-Деменск</a>
+        <a class="modal-city__city-link" data-city="Спас-Клепики">Спас-Клепики</a>
+        <a class="modal-city__city-link" data-city="Спасск">Спасск</a>
+        <a class="modal-city__city-link" data-city="Спасск-Дальний">Спасск-Дальний</a>
+        <a class="modal-city__city-link" data-city="Спасск-Рязанский">Спасск-Рязанский</a>
+        <a class="modal-city__city-link" data-city="Спасск-Сталинский">Спасск-Сталинский</a>
+        <a class="modal-city__city-link" data-city="Спасск-Татарский">Спасск-Татарский</a>
+        <a class="modal-city__city-link" data-city="Среднеуральск">Среднеуральск</a>
+        <a class="modal-city__city-link" data-city="Ставрополь">Ставрополь</a>
+        <a class="modal-city__city-link" data-city="Стародуб">Стародуб</a>
+        <a class="modal-city__city-link" data-city="Старый Оскол">Старый Оскол</a>
+        <a class="modal-city__city-link" data-city="Стерлитамак">Стерлитамак</a>
+        <a class="modal-city__city-link" data-city="Стрежевой">Стрежевой</a>
+        <a class="modal-city__city-link" data-city="Строитель">Строитель</a>
+        <a class="modal-city__city-link" data-city="Суворов">Суворов</a>
+        <a class="modal-city__city-link" data-city="Судак">Судак</a>
+        <a class="modal-city__city-link" data-city="Суджа">Суджа</a>
+        <a class="modal-city__city-link" data-city="Судогда">Судогда</a>
+        <a class="modal-city__city-link" data-city="Суздаль">Суздаль</a>
+        <a class="modal-city__city-link" data-city="Сунжа">Сунжа</a>
+        <a class="modal-city__city-link" data-city="Сураж">Сураж</a>
+        <a class="modal-city__city-link" data-city="Сургут">Сургут</a>
+        <a class="modal-city__city-link" data-city="Суровикино">Суровикино</a>
+        <a class="modal-city__city-link" data-city="Сурск">Сурск</a>
+        <a class="modal-city__city-link" data-city="Сусуман">Сусуман</a>
+        <a class="modal-city__city-link" data-city="Сухиничи">Сухиничи</a>
+        <a class="modal-city__city-link" data-city="Сухой Лог">Сухой Лог</a>
+        <a class="modal-city__city-link" data-city="Сызрань">Сызрань</a>
+        <a class="modal-city__city-link" data-city="Сыктывкар">Сыктывкар</a>
+        <a class="modal-city__city-link" data-city="Сысерть">Сысерть</a>
+        <a class="modal-city__city-link" data-city="Сычевка">Сычевка</a>
+        <a class="modal-city__city-link" data-city="Сясьстрой">Сясьстрой</a>
+        <a class="modal-city__city-link" data-city="Тавда">Тавда</a>
+        <a class="modal-city__city-link" data-city="Таганрог">Таганрог</a>
+        <a class="modal-city__city-link" data-city="Тайга">Тайга</a>
+        <a class="modal-city__city-link" data-city="Тайшет">Тайшет</a>
+        <a class="modal-city__city-link" data-city="Талдом">Талдом</a>
+        <a class="modal-city__city-link" data-city="Талица">Талица</a>
+        <a class="modal-city__city-link" data-city="Тамбов">Тамбов</a>
+        <a class="modal-city__city-link" data-city="Тара">Тара</a>
+        <a class="modal-city__city-link" data-city="Тарко-Сале">Тарко-Сале</a>
+        <a class="modal-city__city-link" data-city="Таруса">Таруса</a>
+        <a class="modal-city__city-link" data-city="Татарск">Татарск</a>
+        <a class="modal-city__city-link" data-city="Таштагол">Таштагол</a>
+        <a class="modal-city__city-link" data-city="Тверь">Тверь</a>
+        <a class="modal-city__city-link" data-city="Теберда">Теберда</a>
+        <a class="modal-city__city-link" data-city="Тейково">Тейково</a>
+        <a class="modal-city__city-link" data-city="Темников">Темников</a>
+        <a class="modal-city__city-link" data-city="Темрюк">Темрюк</a>
+        <a class="modal-city__city-link" data-city="Терек">Терек</a>
+        <a class="modal-city__city-link" data-city="Тетюши">Тетюши</a>
+        <a class="modal-city__city-link" data-city="Тимашевск">Тимашевск</a>
+        <a class="modal-city__city-link" data-city="Тихвин">Тихвин</a>
+        <a class="modal-city__city-link" data-city="Тихорецк">Тихорецк</a>
+        <a class="modal-city__city-link" data-city="Тобольск">Тобольск</a>
+        <a class="modal-city__city-link" data-city="Тогучин">Тогучин</a>
+        <a class="modal-city__city-link" data-city="Тольятти">Тольятти</a>
+        <a class="modal-city__city-link" data-city="Томари">Томари</a>
+        <a class="modal-city__city-link" data-city="Томмот">Томмот</a>
+        <a class="modal-city__city-link" data-city="Томск">Томск</a>
+        <a class="modal-city__city-link" data-city="Топки">Топки</a>
+        <a class="modal-city__city-link" data-city="Торжок">Торжок</a>
+        <a class="modal-city__city-link" data-city="Торопец">Торопец</a>
+        <a class="modal-city__city-link" data-city="Тосно">Тосно</a>
+        <a class="modal-city__city-link" data-city="Тотьма">Тотьма</a>
+        <a class="modal-city__city-link" data-city="Трехгорный">Трехгорный</a>
+        <a class="modal-city__city-link" data-city="Троицк">Троицк</a>
+        <a class="modal-city__city-link" data-city="Трубчевск">Трубчевск</a>
+        <a class="modal-city__city-link" data-city="Туапсе">Туапсе</a>
+        <a class="modal-city__city-link" data-city="Туймазы">Туймазы</a>
+        <a class="modal-city__city-link" data-city="Тула">Тула</a>
+        <a class="modal-city__city-link" data-city="Тулун">Тулун</a>
+        <a class="modal-city__city-link" data-city="Туран">Туран</a>
+        <a class="modal-city__city-link" data-city="Туринск">Туринск</a>
+        <a class="modal-city__city-link" data-city="Тутаев">Тутаев</a>
+        <a class="modal-city__city-link" data-city="Тында">Тында</a>
+        <a class="modal-city__city-link" data-city="Тырныауз">Тырныауз</a>
+        <a class="modal-city__city-link" data-city="Тюкалинск">Тюкалинск</a>
+        <a class="modal-city__city-link" data-city="Тюмень">Тюмень</a>
+        <a class="modal-city__city-link" data-city="Уварово">Уварово</a>
+        <a class="modal-city__city-link" data-city="Углегорск">Углегорск</a>
+        <a class="modal-city__city-link" data-city="Углич">Углич</a>
+        <a class="modal-city__city-link" data-city="Удачный">Удачный</a>
+        <a class="modal-city__city-link" data-city="Удомля">Удомля</a>
+        <a class="modal-city__city-link" data-city="Ужур">Ужур</a>
+        <a class="modal-city__city-link" data-city="Узловая">Узловая</a>
+        <a class="modal-city__city-link" data-city="Улан-Удэ">Улан-Удэ</a>
+        <a class="modal-city__city-link" data-city="Ульяновск">Ульяновск</a>
+        <a class="modal-city__city-link" data-city="Унеча">Унеча</a>
+        <a class="modal-city__city-link" data-city="Урай">Урай</a>
+        <a class="modal-city__city-link" data-city="Урень">Урень</a>
+        <a class="modal-city__city-link" data-city="Уржум">Уржум</a>
+        <a class="modal-city__city-link" data-city="Урус-Мартан">Урус-Мартан</a>
+        <a class="modal-city__city-link" data-city="Урюпинск">Урюпинск</a>
+        <a class="modal-city__city-link" data-city="Усинск">Усинск</a>
+        <a class="modal-city__city-link" data-city="Усмань">Усмань</a>
+        <a class="modal-city__city-link" data-city="Усолье">Усолье</a>
+        <a class="modal-city__city-link" data-city="Усолье-Сибирское">Усолье-Сибирское</a>
+        <a class="modal-city__city-link" data-city="Уссурийск">Уссурийск</a>
+        <a class="modal-city__city-link" data-city="Усть-Джегута">Усть-Джегута</a>
+        <a class="modal-city__city-link" data-city="Усть-Илимск">Усть-Илимск</a>
+        <a class="modal-city__city-link" data-city="Усть-Катав">Усть-Катав</a>
+        <a class="modal-city__city-link" data-city="Усть-Кут">Усть-Кут</a>
+        <a class="modal-city__city-link" data-city="Усть-Лабинск">Усть-Лабинск</a>
+        <a class="modal-city__city-link" data-city="Устюжна">Устюжна</a>
+        <a class="modal-city__city-link" data-city="Уфа">Уфа</a>
+        <a class="modal-city__city-link" data-city="Ухта">Ухта</a>
+        <a class="modal-city__city-link" data-city="Учалы">Учалы</a>
+        <a class="modal-city__city-link" data-city="Уяр">Уяр</a>
+        <a class="modal-city__city-link" data-city="Фатеж">Фатеж</a>
+        <a class="modal-city__city-link" data-city="Феодосия">Феодосия</a>
+        <a class="modal-city__city-link" data-city="Фокино">Фокино</a>
+        <a class="modal-city__city-link" data-city="Фролово">Фролово</a>
+        <a class="modal-city__city-link" data-city="Фрязино">Фрязино</a>
+        <a class="modal-city__city-link" data-city="Фурманов">Фурманов</a>
+        <a class="modal-city__city-link" data-city="Хабаровск">Хабаровск</a>
+        <a class="modal-city__city-link" data-city="Хадыженск">Хадыженск</a>
+        <a class="modal-city__city-link" data-city="Ханты-Мансийск">Ханты-Мансийск</a>
+        <a class="modal-city__city-link" data-city="Харабали">Харабали</a>
+        <a class="modal-city__city-link" data-city="Харовск">Харовск</a>
+        <a class="modal-city__city-link" data-city="Хасавюрт">Хасавюрт</a>
+        <a class="modal-city__city-link" data-city="Хвалынск">Хвалынск</a>
+        <a class="modal-city__city-link" data-city="Хилок">Хилок</a>
+        <a class="modal-city__city-link" data-city="Химки">Химки</a>
+        <a class="modal-city__city-link" data-city="Холм">Холм</a>
+        <a class="modal-city__city-link" data-city="Холмск">Холмск</a>
+        <a class="modal-city__city-link" data-city="Хотьково">Хотьково</a>
+        <a class="modal-city__city-link" data-city="Цивильск">Цивильск</a>
+        <a class="modal-city__city-link" data-city="Цимлянск">Цимлянск</a>
+        <a class="modal-city__city-link" data-city="Чадан">Чадан</a>
+        <a class="modal-city__city-link" data-city="Чайковский">Чайковский</a>
+        <a class="modal-city__city-link" data-city="Чапаевск">Чапаевск</a>
+        <a class="modal-city__city-link" data-city="Чаплыгин">Чаплыгин</a>
+        <a class="modal-city__city-link" data-city="Чебаркуль">Чебаркуль</a>
+        <a class="modal-city__city-link" data-city="Чебоксары">Чебоксары</a>
+        <a class="modal-city__city-link" data-city="Чегем">Чегем</a>
+        <a class="modal-city__city-link" data-city="Чекалин">Чекалин</a>
+        <a class="modal-city__city-link" data-city="Челябинск">Челябинск</a>
+        <a class="modal-city__city-link" data-city="Чердынь">Чердынь</a>
+        <a class="modal-city__city-link" data-city="Черемхово">Черемхово</a>
+        <a class="modal-city__city-link" data-city="Черепаново">Черепаново</a>
+        <a class="modal-city__city-link" data-city="Череповец">Череповец</a>
+        <a class="modal-city__city-link" data-city="Черкесск">Черкесск</a>
+        <a class="modal-city__city-link" data-city="Чермоз">Чермоз</a>
+        <a class="modal-city__city-link" data-city="Черноголовка">Черноголовка</a>
+        <a class="modal-city__city-link" data-city="Черногорск">Черногорск</a>
+        <a class="modal-city__city-link" data-city="Чернушка">Чернушка</a>
+        <a class="modal-city__city-link" data-city="Черняховск">Черняховск</a>
+        <a class="modal-city__city-link" data-city="Чехов">Чехов</a>
+        <a class="modal-city__city-link" data-city="Чистополь">Чистополь</a>
+        <a class="modal-city__city-link" data-city="Чита">Чита</a>
+        <a class="modal-city__city-link" data-city="Чкаловск">Чкаловск</a>
+        <a class="modal-city__city-link" data-city="Чудово">Чудово</a>
+        <a class="modal-city__city-link" data-city="Чулым">Чулым</a>
+        <a class="modal-city__city-link" data-city="Чусовой">Чусовой</a>
+        <a class="modal-city__city-link" data-city="Чухлома">Чухлома</a>
+        <a class="modal-city__city-link" data-city="Шагонар">Шагонар</a>
+        <a class="modal-city__city-link" data-city="Шадринск">Шадринск</a>
+        <a class="modal-city__city-link" data-city="Шали">Шали</a>
+        <a class="modal-city__city-link" data-city="Шарыпово">Шарыпово</a>
+        <a class="modal-city__city-link" data-city="Шарья">Шарья</a>
+        <a class="modal-city__city-link" data-city="Шатура">Шатура</a>
+        <a class="modal-city__city-link" data-city="Шахты">Шахты</a>
+        <a class="modal-city__city-link" data-city="Шахунья">Шахунья</a>
+        <a class="modal-city__city-link" data-city="Шацк">Шацк</a>
+        <a class="modal-city__city-link" data-city="Шебекино">Шебекино</a>
+        <a class="modal-city__city-link" data-city="Шелехов">Шелехов</a>
+        <a class="modal-city__city-link" data-city="Шенкурск">Шенкурск</a>
+        <a class="modal-city__city-link" data-city="Шилка">Шилка</a>
+        <a class="modal-city__city-link" data-city="Шимановск">Шимановск</a>
+        <a class="modal-city__city-link" data-city="Шиханы">Шиханы</a>
+        <a class="modal-city__city-link" data-city="Шлиссельбург">Шлиссельбург</a>
+        <a class="modal-city__city-link" data-city="Шумерля">Шумерля</a>
+        <a class="modal-city__city-link" data-city="Шуя">Шуя</a>
+        <a class="modal-city__city-link" data-city="Щекино">Щекино</a>
+        <a class="modal-city__city-link" data-city="Щелково">Щелково</a>
+        <a class="modal-city__city-link" data-city="Щигры">Щигры</a>
+        <a class="modal-city__city-link" data-city="Щучье">Щучье</a>
+        <a class="modal-city__city-link" data-city="Электрогорск">Электрогорск</a>
+        <a class="modal-city__city-link" data-city="Электросталь">Электросталь</a>
+        <a class="modal-city__city-link" data-city="Электроугли">Электроугли</a>
+        <a class="modal-city__city-link" data-city="Элиста">Элиста</a>
+        <a class="modal-city__city-link" data-city="Энгельс">Энгельс</a>
+        <a class="modal-city__city-link" data-city="Эртиль">Эртиль</a>
+        <a class="modal-city__city-link" data-city="Югорск">Югорск</a>
+        <a class="modal-city__city-link" data-city="Южа">Южа</a>
+        <a class="modal-city__city-link" data-city="Южно-Сахалинск">Южно-Сахалинск</a>
+        <a class="modal-city__city-link" data-city="Южно-Сухокумск">Южно-Сухокумск</a>
+        <a class="modal-city__city-link" data-city="Южноуральск">Южноуральск</a>
+        <a class="modal-city__city-link" data-city="Юрга">Юрга</a>
+        <a class="modal-city__city-link" data-city="Юрьев-Польский">Юрьев-Польский</a>
+        <a class="modal-city__city-link" data-city="Юрьевец">Юрьевец</a>
+        <a class="modal-city__city-link" data-city="Юрюзань">Юрюзань</a>
+        <a class="modal-city__city-link" data-city="Юхнов">Юхнов</a>
+        <a class="modal-city__city-link" data-city="Ядрин">Ядрин</a>
+        <a class="modal-city__city-link" data-city="Якутск">Якутск</a>
+        <a class="modal-city__city-link" data-city="Ялта">Ялта</a>
+        <a class="modal-city__city-link" data-city="Ялutorовск">Ялуторовск</a>
+        <a class="modal-city__city-link" data-city="Янаул">Янаул</a>
+        <a class="modal-city__city-link" data-city="Яранск">Яранск</a>
+        <a class="modal-city__city-link" data-city="Яровое">Яровое</a>
+        <a class="modal-city__city-link" data-city="Ярославль">Ярославль</a>
+        <a class="modal-city__city-link" data-city="Ярцево">Ярцево</a>
+        <a class="modal-city__city-link" data-city="Ясногорск">Ясногорск</a>
+        <a class="modal-city__city-link" data-city="Ясный">Ясный</a>
+        <a class="modal-city__city-link" data-city="Яхрома">Яхрома</a>
+      </div>
+      <div class="modal-city__city-name country-header">Азербайджан</div>
+      <div class="modal-city__city-list city-list">
+        <a class="modal-city__city-link" data-city="Баку">Баку</a>
+        <a class="modal-city__city-link" data-city="Гянджа">Гянджа</a>
+        <a class="modal-city__city-link" data-city="Ленкорань">Ленкорань</a>
+        <a class="modal-city__city-link" data-city="Мингечевир">Мингечевир</a>
+        <a class="modal-city__city-link" data-city="Нахичевань">Нахичевань</a>
+        <a class="modal-city__city-link" data-city="Сумгаит">Сумгаит</a>
+        <a class="modal-city__city-link" data-city="Ханкенди">Ханкенди</a>
+        <a class="modal-city__city-link" data-city="Хырдалан">Хырдалан</a>
+        <a class="modal-city__city-link" data-city="Ширван">Ширван</a>
+      </div>
+      <div class="modal-city__city-name country-header">Армения</div>
+      <div class="modal-city__city-list city-list">
+        <a class="modal-city__city-link" data-city="Абовян">Абовян</a>
+        <a class="modal-city__city-link" data-city="Вагаршапат">Вагаршапат</a>
+        <a class="modal-city__city-link" data-city="Ванадзор">Ванадзор</a>
+        <a class="modal-city__city-link" data-city="Гюмри">Гюмри</a>
+        <a class="modal-city__city-link" data-city="Ереван">Ереван</a>
+        <a class="modal-city__city-link" data-city="Капан">Капан</a>
+        <a class="modal-city__city-link" data-city="Раздан">Раздан</a>
+      </div>
+      <div class="modal-city__city-name country-header">Беларусь</div>
+      <div class="modal-city__city-list city-list">
+        <a class="modal-city__city-link" data-city="Барановичи">Барановичи</a>
+        <a class="modal-city__city-link" data-city="Бобруйск">Бобруйск</a>
+        <a class="modal-city__city-link" data-city="Борисов">Борисов</a>
+        <a class="modal-city__city-link" data-city="Брест">Брест</a>
+        <a class="modal-city__city-link" data-city="Витебск">Витебск</a>
+        <a class="modal-city__city-link" data-city="Гомель">Гомель</a>
+        <a class="modal-city__city-link" data-city="Гродно">Гродно</a>
+        <a class="modal-city__city-link" data-city="Минск">Минск</a>
+        <a class="modal-city__city-link" data-city="Могилёв">Могилёв</a>
+        <a class="modal-city__city-link" data-city="Мозырь">Мозырь</a>
+        <a class="modal-city__city-link" data-city="Пинск">Пинск</a>
+      </div>
+      <div class="modal-city__city-name country-header">Казахстан</div>
+      <div class="modal-city__city-list city-list">
+        <a class="modal-city__city-link" data-city="Актобе">Актобе</a>
+        <a class="modal-city__city-link" data-city="Алма-Ата">Алма-Ата</a>
+        <a class="modal-city__city-link" data-city="Астана">Астана</a>
+        <a class="modal-city__city-link" data-city="Атырау">Атырау</a>
+        <a class="modal-city__city-link" data-city="Караганда">Караганда</a>
+        <a class="modal-city__city-link" data-city="Павлодар">Павлодар</a>
+        <a class="modal-city__city-link" data-city="Семей">Семей</a>
+        <a class="modal-city__city-link" data-city="Тараз">Тараз</a>
+        <a class="modal-city__city-link" data-city="Усть-Каменогорск">Усть-Каменогорск</a>
+        <a class="modal-city__city-link" data-city="Шымкент">Шымкент</a>
+      </div>
+      <div class="modal-city__city-name country-header">Киргизия</div>
+      <div class="modal-city__city-list city-list">
+        <a class="modal-city__city-link" data-city="Бишкек">Бишкек</a>
+        <a class="modal-city__city-link" data-city="Джалал-Абад">Джалал-Абад</a>
+        <a class="modal-city__city-link" data-city="Каракол">Каракол</a>
+        <a class="modal-city__city-link" data-city="Ош">Ош</a>
+      </div>
+      <div class="modal-city__city-name country-header">Молдова</div>
+      <div class="modal-city__city-list city-list">
+        <a class="modal-city__city-link" data-city="Бельцы">Бельцы</a>
+        <a class="modal-city__city-link" data-city="Бендеры">Бендеры</a>
+        <a class="modal-city__city-link" data-city="Кишинёв">Кишинёв</a>
+        <a class="modal-city__city-link" data-city="Рыбница">Рыбница</a>
+        <a class="modal-city__city-link" data-city="Тирасполь">Тирасполь</a>
+      </div>
+      <div class="modal-city__city-name country-header">ОАЭ</div>
+      <div class="modal-city__city-list city-list">
+        <a class="modal-city__city-link" data-city="Бельцы">Абу-Даби</a>
+        <a class="modal-city__city-link" data-city="Бендеры">Дубай</a>
+      </div>
+      <div class="modal-city__city-name country-header">Таджикистан</div>
+      <div class="modal-city__city-list city-list">
+        <a class="modal-city__city-link" data-city="Душанбе">Душанбе</a>
+        <a class="modal-city__city-link" data-city="Бохтар">Бохтар</a>
+        <a class="modal-city__city-link" data-city="Истаравшан">Истаравшан</a>
+        <a class="modal-city__city-link" data-city="Куляб">Куляб</a>
+        <a class="modal-city__city-link" data-city="Пенджикент">Пенджикент</a>
+        <a class="modal-city__city-link" data-city="Исфара">Исфара</a>
+        <a class="modal-city__city-link" data-city="Худжанд">Худжанд</a>
+      </div>
+      <div class="modal-city__city-name country-header">Туркменистан</div>
+      <div class="modal-city__city-list city-list">
+        <a class="modal-city__city-link" data-city="Ашхабад">Ашхабад</a>
+        <a class="modal-city__city-link" data-city="Балканабад">Балканабад</a>
+        <a class="modal-city__city-link" data-city="Байрамали">Байрамали</a>
+        <a class="modal-city__city-link" data-city="Дашогуз">Дашогуз</a>
+        <a class="modal-city__city-link" data-city="Мары">Мары</a>
+        <a class="modal-city__city-link" data-city="Туркменабад">Туркменабад</a>
+        <a class="modal-city__city-link" data-city="Туркменбаши">Туркменбаши</a>
+      </div>
+      <div class="modal-city__city-name country-header">Узбекистан</div>
+      <div class="modal-city__city-list city-list">
+        <a class="modal-city__city-link" data-city="Андижан">Андижан</a>
+        <a class="modal-city__city-link" data-city="Бухара">Бухара</a>
+        <a class="modal-city__city-link" data-city="Коканд">Коканд</a>
+        <a class="modal-city__city-link" data-city="Наманган">Наманган</a>
+        <a class="modal-city__city-link" data-city="Нукус">Нукус</a>
+        <a class="modal-city__city-link" data-city="Самарканд">Самарканд</a>
+        <a class="modal-city__city-link" data-city="Ташкент">Ташкент</a>
+        <a class="modal-city__city-link" data-city="Фергана">Фергана</a>
+      </div>
+    </div>
   </div>
 </div>

@@ -27,13 +27,6 @@
     overflow: hidden;
     border-radius: 20px;
 
-    @include xl {
-      .overlay {
-        display: block;
-        background-color: rgba($color: #ffffff, $alpha: 0.5);
-      }
-    }
-
     @include lg {
       width: 300px;
     }

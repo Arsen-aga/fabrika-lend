@@ -5,19 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <title>Главная страница</title>
+  <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+  <title>Фабрика шатров</title>
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body>
   <div class="body_wrapper main-page" id="home">
-    <header class="header">
-    
+    <header class="header" id="header">
+
       <div class="header-top">
         <div class="container header-top__container">
           <div class="header-top__leftside">
-            <a href="/" class="header-top__logo">
+            <a href="#header" class="header-top__logo">
               <div class="header-top__logo-pic">
                 <img src="images/icons/logo.svg" alt="">
               </div>
@@ -27,30 +27,34 @@
                 полного цикла
               </p>
             </a>
-            <div class="header-top__select _icon-geo">
+            <div class="header-top__select">
               <div class="header-top__select-inner">
-    
-    
-                <div class="header-top__city-choose">
-                  Выберите ваш город:
+
+
+                <!--ГОРОД_СЕЛЕКТОР-->
+                <div id="city-confirmation" style="display: none;">
+                  <p class="city-confirmation__title">Ваш город - <span id="city-name"></span>?</p>
+                  <button class="city-confirmation__button" id="confirm-city">Да</button>
+                  <a class="city-confirmation__button" data-fancybox href="#select-city" id="deny-city">Нет</a>
                 </div>
-                <div class="header-top__city-choosen _icon-arrow">
-                  Москва
-                </div>
-                <ul class="header-top__cities">
-                  <li class="header-top__city">
-                    <input type="radio" id="city1" name="city[]" value="msk">
-                    <label for="city1">Москва</label>
-                  </li>
-                  <li class="header-top__city">
-                    <input type="radio" id="city2" name="city[]" value="spb">
-                    <label for="city2">Ленинградская область</label>
-                  </li>
-                  <li class="header-top__city">
-                    <input type="radio" id="city3" name="city[]" value="anapa">
-                    <label for="city3">Краснодарский край</label>
-                  </li>
-                </ul>
+
+                <a class="header-top__modal-city" href="#select-city" data-fancybox style="display:block;">
+                  <!--ссылка должна быть по всей площади селектора города-->
+                  <div class="header-top__select _icon-geo"> <!--общак + лого в before-->
+                    <div class="header-top__select-inner"> <!--блок текстовой области-->
+                      <div class="header-top__city-choose"> <!--просто буквы-->
+                        Выберите ваш город:
+                      </div>
+                      <div class="header-top__city-choosen _icon-arrow" id="selected-city">
+                        <!--тут будет выбранный город-->
+                        город не выбран
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
+
+                <!--/ГОРОД_СЕЛЕКТР-->
               </div>
             </div>
           </div>
@@ -87,25 +91,28 @@
                 </path>
               </svg>
             </button>
-            <ul class="main-nav__list">
+            <ul class="main-nav__list menu">
               <li class="main-nav__item main-nav__item_parent">
                 <a href="#" class="main-nav__link">Главная</a>
               </li>
               <li class="main-nav__item main-nav__item_parent">
-                <a href="#" class="main-nav__link ">О нас</a>
+                <a href="#service-standard" class="main-nav__link ">О нас</a>
               </li>
               <li class="main-nav__item main-nav__item_parent">
-                <a href="#" class="main-nav__link">Услуги</a>
+                <a href="#warranty-service" class="main-nav__link">Услуги</a>
               </li>
               <li class="main-nav__item main-nav__item_parent">
-                <a href="#" class="main-nav__link">Галерея</a>
+                <a href="#trust" class="main-nav__link">Галерея</a>
               </li>
               <li class="main-nav__item main-nav__item_parent">
-                <a href="#" class="main-nav__link ">Рекомендации</a>
+                <a href="#recommendations" class="main-nav__link ">Рекомендации</a>
               </li>
               <li class="main-nav__item main-nav__item_parent">
-                <a href="#" class="main-nav__link ">FAQ</a>
-              </li>    
+                <a href="#questions" class="main-nav__link ">FAQ</a>
+              </li>
+              <li class="main-nav__item main-nav__item_parent">
+                <a href="#contacts" class="main-nav__link ">Контакты</a>
+              </li>
             </ul>
             <div class="header-top__messengers messengers _mobile">
               <a href="https://wa.me/79190339577"
@@ -140,7 +147,7 @@
               </g>
             </svg>
           </button>
-          <a data-fancybox href="#" class="header-bottom__btn">Оставить заявку</a>
+          <a href="#callback" data-fancybox class="header-bottom__btn">Оставить заявку</a>
         </div>
       </div>
     </header>

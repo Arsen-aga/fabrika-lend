@@ -11,6 +11,12 @@
 
 .header-top {
 
+  &__messengers {
+    @include lg {
+      flex-direction: column;
+    }
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -28,6 +34,12 @@
 
     @include xl {
       gap: 30px;
+    }
+
+    @include lg {
+      flex-wrap: wrap;
+      gap: 5px;
+      max-width: 225px;
     }
   }
 
@@ -75,10 +87,6 @@
       flex-shrink: 0;
       font-size: 20px;
     }
-
-    @include lg {
-      display: none;
-    }
   }
 
   &__city-choose {
@@ -86,6 +94,10 @@
     color: rgb(40, 40, 40);
     font-size: 14px;
     font-weight: 400;
+
+    @include lg {
+      display: none;
+    }
   }
 
   &__city-choosen {
@@ -104,6 +116,11 @@
     &::before {
       font-size: 4.82px;
       margin-top: 3px;
+    }
+
+    @include lg {
+      margin-top: 0;
+      margin-bottom: 15px;
     }
   }
 
@@ -236,6 +253,8 @@
       color: #d94000;
     }
   }
+
+
 }
 
 .header-bottom {
@@ -490,6 +509,8 @@
       color: rgb(252, 76, 2);
     }
   }
+
+
 }
 
 .messengers {
